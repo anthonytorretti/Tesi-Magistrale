@@ -63,6 +63,33 @@ Spiegare la necessita di costruzione di una macchina dalle dimensioni ridotte ve
 \chapter{Etichettatrice RMC17002}
 In questo capitolo spiegheremo il funzionamento dell'Etichettatrice ma è necessario partire prima da una breve descrizione sulla struttura meccanica per poi passare ad una dettagliata analisi dei dispositivi Elettrici ed Elettronici che la compongono.
 \section{Struttura Meccanica}
+In questa sezione descriviamo la struttura meccanica analizzando i vari elementi che la compongono.
+La meccanica base dell'Etichettarice è relativamente semplice. Come si può ben vedere nella figura \ref{mec1} essa è composta da tre stelle trasportatrici. La prima è quella di ingresso (1) che si occupa di agganciare i flaconi dal nastro di ingresso. La seconda ovvero quella centrale (2) più grande è la stella principale che trasporta i flaconi sull'unità di etichettaggio. Mentre l'ultima è la stella di uscita (3) che si occupa oltre a trasportare i flaconi verso l'uscita anche di scartare eventuali flaconi che non hanno superato i controlli di qualità. Quest'ultima, per gestire lo scarto, ha in ogni incavo una ventosa che serve a catturare il flacone scartato per evitare che venga rilasciato sul nastro di uscita. Il meccanismo di scarto verrà spiegato in dettaglio nell'apposito capitolo.
+Un altro elemento della struttura meccanica base è il massaggiatore (4) che si occupa di assicurare l'adesione dell'etichetta nella fase appena successiva all'applicazione sul flacone. Esso è costituito da una cinghia gommata messa in moto da un sistema di rulli dentati alimentati da un motore brushless
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC1}
+	\label{mec1}
+	\caption{ Vista dall'alto della struttura della macchina}
+\end{figure}
+
+Nella figura \ref{mec2} si possono vedere chiaramente i tre ingranaggi delle tre stelle, il motore con il riduttore collegato alla stella principale e sopratutto da notare la stella di uscita ed il sistema pneumatico necessari a gestire lo scarto dei flaconi.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC2}
+	\label{mec2}
+	\caption{ Vista sotto scocca della struttura della macchina}
+\end{figure}
+
+
+
+
+
+
 Dettagli meccanici - Dimensione -Elementi(Natsro in e out) - stella ingresso,centrale,scarto - raccoglitore Scarto - guide regolabili per dispositivi - struttura di acciaio con porte di plexiglass
 \section{Dispositivi Elettrici ed Elettronici}
 Dispositivi Elettrici ed elettronici
@@ -81,16 +108,80 @@ Il funzionamento base del macchinario è abbastanza semplice.
 Avendo sommariamente illustrato il funzionamento base della nostra etichettatrice tralasciando controlli, sistemi di visione, meccanismi di scarto ed altro, andiamo ora a spiegare un po più nel dettaglio cosa avviene realmente in ogni fase.
 
 \subsection{Ingresso Flaconi}
-Nella fase di ingresso flaconi, come si può ben immaginare non vi è solo un semplice nastro che trasporta i flaconi da un punto ad un altro bensì vi sono alcuni controlli necessari per un corretto funzionamento del macchinario nonchè di protezione del sistema stesso. Prima di tutto il nastro in ingresso è regolabile in velocità mediante un inverter per assicurare che i flaconi arrivino con una giusta frequenza. \textcolor{red}{FIGURA} Non manca sul nastro in ingresso il sensore di minimo carico che segnala il plc qualora non ci sia prodotto. Alla ricezione di tale segnale il plc provvederà a fermare la macchina che altrimenti girerebbe inutilmente (vi sono inoltre anche segnali di abilitazione che arrivano dalla macchina a monte necessari a segnalare un interruzione della linea).
-Un problema non da sottovalutare nella nostra applicazione è la possibilità che un flacone si rovesci su nastro o arrivi già rovesciato dalla macchina a monte (mai fidarsi di chi si ha prima). Un flacone rovesciato potrebbe essere estremamente pericoloso, se la stella alla fine del nastro dovesse mai agganciare un flacone di vetro mal posizionato lo farebbe in mille pezzi e richierebbe di danneggiare la macchina. Per evitare ciò, abbiamo munito il minimo carico di doppio sensore (uno alto ed uno basso). \textcolor{red}{FIGURA} Questi due sensori lavorano in contemporanea uno sopra l'altro in modo tale che se un flacone dovesse passare rovesciato, solo il sensore basso ne rileverebbe la presenza. Questa situazione manda un allarme che blocca immediatamente la macchina avvisando l'operatore mediante HMI.  
+Nella fase di ingresso flaconi, come si può ben immaginare non vi è solo un semplice nastro che trasporta i flaconi da un punto ad un altro bensì vi sono alcuni controlli necessari per un corretto funzionamento del macchinario nonchè di protezione del sistema stesso. Prima di tutto il nastro in ingresso è regolabile in velocità mediante un inverter per assicurare che i flaconi arrivino con una giusta frequenza. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC3}
+	\label{mec3}
+	\caption{ Nastro in Ingresso}
+\end{figure}
+
+ Non manca sul nastro in ingresso il sensore di minimo carico che segnala il plc qualora non ci sia prodotto. Alla ricezione di tale segnale il plc provvederà a fermare la macchina che altrimenti girerebbe inutilmente (vi sono inoltre anche segnali di abilitazione che arrivano dalla macchina a monte necessari a segnalare un interruzione della linea).
+Un problema non da sottovalutare nella nostra applicazione è la possibilità che un flacone si rovesci su nastro o arrivi già rovesciato dalla macchina a monte (mai fidarsi di chi si ha prima). Un flacone rovesciato potrebbe essere estremamente pericoloso, se la stella alla fine del nastro dovesse mai agganciare un flacone di vetro mal posizionato lo farebbe in mille pezzi e richierebbe di danneggiare la macchina. Per evitare ciò, abbiamo munito il minimo carico di doppio sensore (uno alto ed uno basso). 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC4}
+	\label{mec4}
+	\caption{ Doppio Sensore Carico Minimo ed anti rovesciamento flacone}
+\end{figure}
+
+ Questi due sensori lavorano in contemporanea uno sopra l'altro in modo tale che se un flacone dovesse passare rovesciato, solo il sensore basso ne rileverebbe la presenza. Questa situazione manda un allarme che blocca immediatamente la macchina avvisando l'operatore con una segnalazione sul pannello operatore e mediante il torrino luminoso.  
    
 \subsection{Controllo Presenza}
 In questa fase che sembra la più banale inizia il vero fulcro del controllo che si porterà avanti per tutto il processo. Il flacone viene agganciato dalla prima stella e durante il trasporto il sensore di presenza ne verifica la presenza. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC5}
+	\label{mec5}
+	\caption{ Sensore presenza flacone stella ingresso}
+\end{figure}
+
 Questo momento è cruciale perchè è quì che si attiva lo "Shift Register" del controllo che vedremo in dettaglio nei capitoli successivi. Per ora anticipiamo lo "Shift Register" come l'elemento che ci permette di determinare la posizione e lo stato di ogni flacone all'interno della macchina.
+
+
+
+
 \subsection{Etichettatura}
-Sicuramente la Fase più importante di tutto il processo, l'etichettatura è anche la più complessa a livello di controlli e settaggio. Il flacone una volta rilevato dal sensore di presenza, viene agganciato dalla seconda stella che lo trasporta sulla pinna di etichettatura. Una volta che il flacone si trova in prossimità della pinna (Camme programmate su giri macchina \textcolor{red}{riferimento capitolo}) viene inviato un comando di trigger digitale alla testa di etichettatura che applicherà l'etichetta. 
+Sicuramente la Fase più importante di tutto il processo, l'etichettatura è anche la più complessa a livello di controlli e settaggio. Il flacone una volta rilevato dal sensore di presenza, viene agganciato dalla seconda stella che lo trasporta sulla pinna di etichettatura. Una volta che il flacone si trova in prossimità della pinna viene inviato un comando di trigger digitale alla testa di etichettatura che applicherà l'etichetta. 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC6}
+	\label{mec6}
+	\caption{ Zona di applicazione etichetta }
+\end{figure}
 
+\subsection{Massaggio}
+Come precedentemente anticipato il massaggio avviene nella fase immediatamente successiva all'applicazione etichette. Il massaggiatore come si evince dalla figura \ref{MEC7} massaggia l'etichetta sul flacone per assicurarne l'adesione. Per ottimizzarne l'adesione, ci si deve assicurare che la velocità con la quale viene applicata l'etichetta sia pressocchè simile a quella di rotolamento del flacone. Per questo motivo abbiamo munito il massaggiatore di un encoder (1) che comunica all'unità di etichettatura l'attuale velocità lineare del nastro affinchè regoli automaticamente la velocità di espulsione delle singole etichette.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC7}
+	\label{MEC7}
+	\caption{ Massaggiatore Etichette }
+\end{figure}
+
+\subsection{Uscita Flacone}
+L'ultima Fase del processo di etichettatura è quella di Uscita e Scarto. Dopo aver applicato l'etichetta e verificata la qualità del prodotto spetta all'ultima stella decidere se rilasciare o meno il flacone sul nastro di uscita. Come accennato precedentemente, la stella di uscita possiede delle ventose ref{mec8} per catturare il flacone e dirigerlo verso il nastro oppure verso lo scarto in base al risultato dei vari controlli effettuati durante il processo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC8}
+	\label{mec8}
+	\caption{ Stella di Scarto }
+\end{figure}
+
+Nella figura possiamo notare come ciò avviene. Nel caso di flacone non conforme rilevato dai sistemi di controllo, la stella di uscita che avrà agganciato precedentemente il flacone con il vuoto nella specifica ventosa, invece di rilasciare il vuoto in prossimità del nastro, manterrà il flacone agganciato fino al raggungimento della zona di scarto. Raggiunta questa zona le ventose rilasciano automaticamente il vuoto lasciando cadere il flacone non conforme nel raccoglitore di scarto \ref{mec9}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/MEC9}
+	\label{mec9}
+	\caption{ Raccoglitore di Scarto}
+\end{figure}
  
 Racconto dettaglato del processo dall'ingresso dei flaconi all'uscita passando tra i vari controlli.
 \chapter{Processo di Sviluppo software PLC}
@@ -119,9 +210,9 @@ Con azionamento diretto si ha il contatto fisico tra la camma e la "Punteria" po
 	\caption{ Foto di un albero a camme.}
 \end{figure}
 
-Con parole più semplici la forma della camma rende possibile l'azionamento di una o più valvole in una determinata fase della rotazione dell'albero. 
+Più semplicemente la forma della camma rende possibile l'azionamento di una o più valvole in una determinata fase della rotazione dell'albero. 
 
-Nel nostro caso non abbiamo camme meccaniche ne valvole ma ciò che ci interessa è il concetto che una camma ad una determinata fase della nostra macchina possa abilitare non una valvola bensì un sensore, un controllo, un comando dispositivo.
+Nel nostro caso non abbiamo camme meccaniche nè valvole ma ciò che ci interessa è il concetto che una camma ad una determinata fase della nostra macchina possa abilitare non una valvola bensì un sensore, un controllo, un comando dispositivo.
 
 Per Camma digitale si intende dunque l'istante di attivazione di una qualunque logica programmabile. Le camme digitali vengono impostate, come anche per una camma meccanica, su un giro del motore principale.
 Nel caso dell'etichettarice, ogni giro completo del motore principale corrisponde alla rotazione della stella di un unico passo (ad ogni passo di stella viene agganciato un flacone nuovo)
