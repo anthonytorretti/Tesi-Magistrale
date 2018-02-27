@@ -49,8 +49,8 @@
 \newpage
 \thispagestyle{empty}
 \section*{abstract}
-Questa tesi si occupa di presentare le metodologie e strumenti applicati nella realizzazione di una etichettatrice di flaconi ad alta velocità progettata e sviluppata per l'area farmaceutica.
-Verranno spiegati i processi necessari allo sviluppo software sia per quanto riguarda la parte PLC che la parte SCADA/HMI nonche quella relativa allo sviluppo del sistema di Visione e controllo.
+Questa tesi si occupa di presentare le metodologie e strumenti applicati nella realizzazione di una etichettatrice di flaconi ad alta velocità, progettata e sviluppata per l'area farmaceutica.
+Verranno presentati i processi necessari allo sviluppo software, sia per quanto riguarda la parte PLC sia la parte SCADA/HMI, nonché quella relativa allo sviluppo del sistema di visione e controllo.
 Si analizzeranno i vari dispositivi che compongono il macchinario, il loro funzionamento ed in particolar modo i protocolli di comunicazione che ci permettono di dialogare con essi. 
 Verrà affrontata inoltre la tematica dell'Industria 4.0 spiegando come poter sviluppare un sistema software che rispetti i criteri del nuovo standard nell'automazione Industriale.
  
@@ -61,13 +61,11 @@ Verrà affrontata inoltre la tematica dell'Industria 4.0 spiegando come poter sv
 Spiegare la necessita di costruzione di una macchina dalle dimensioni ridotte veloce e affidabile. 
 
 \chapter{Etichettatrice RMC17002}
-In questo capitolo spiegheremo il funzionamento dell'Etichettatrice ma è necessario partire prima da una breve descrizione sulla struttura meccanica per poi passare ad una dettagliata analisi dei dispositivi Elettrici ed Elettronici che la compongono.
+In questo capitolo spiegheremo il funzionamento dell'Etichettatrice. A tal scopo è necessario presentare una breve descrizione sulla struttura meccanica, per poi passare ad una dettagliata analisi dei dispositivi Elettrici ed Elettronici che la compongono.
 \section{Struttura Meccanica}
 In questa sezione descriviamo la struttura meccanica analizzando i vari elementi che la compongono.
-La meccanica base dell'Etichettarice è relativamente semplice. Come si può ben vedere nella figura \ref{mec1} essa è composta da tre stelle trasportatrici. La prima è quella di ingresso (1) che si occupa di agganciare i flaconi dal nastro di ingresso. La seconda ovvero quella centrale (2) più grande è la stella principale che trasporta i flaconi sull'unità di etichettaggio. Mentre l'ultima è la stella di uscita (3) che si occupa oltre a trasportare i flaconi verso l'uscita anche di scartare eventuali flaconi che non hanno superato i controlli di qualità. Quest'ultima, per gestire lo scarto, ha in ogni incavo una ventosa che serve a catturare il flacone scartato per evitare che venga rilasciato sul nastro di uscita. Il meccanismo di scarto verrà spiegato in dettaglio nell'apposito capitolo.
-Un altro elemento della struttura meccanica base è il massaggiatore (4) che si occupa di assicurare l'adesione dell'etichetta nella fase appena successiva all'applicazione sul flacone. Esso è costituito da una cinghia gommata messa in moto da un sistema di rulli dentati alimentati da un motore brushless
-
-
+La meccanica base dell'Etichettarice è relativamente semplice. Come si può ben vedere nella figura \ref{mec1} essa è composta da tre stelle trasportatrici: la prima è quella di ingresso (1) che si occupa di agganciare i flaconi dal nastro di ingresso. La seconda, ovvero quella centrale (2) più grande, è la stella principale che trasporta i flaconi sull'unità di etichettaggio. L'ultima è la stella di uscita (3) che si occupa di trasportare i flaconi verso l'uscita e di scartare eventuali flaconi che non hanno superato i controlli di qualità. Quest'ultima, per gestire lo scarto, ha in ogni incavo una ventosa che serve a catturare il flacone scartato per evitare che venga rilasciato sul nastro di uscita. Il meccanismo di scarto verrà descritto in dettaglio nell'apposito capitolo.
+\\Un altro elemento della struttura meccanica base è il massaggiatore (4) che si occupa di assicurare l'adesione dell'etichetta nella fase appena successiva all'applicazione sul flacone. Esso è costituito da una cinghia gommata messa in moto da un sistema di rulli dentati, alimentati da un motore brushless.
 
 \begin{figure}[H]
 	\centering
@@ -76,7 +74,7 @@ Un altro elemento della struttura meccanica base è il massaggiatore (4) che si 
 	\caption{ Vista dall'alto della struttura della macchina}
 \end{figure}
 
-Nella figura \ref{mec2} si possono vedere chiaramente i tre ingranaggi delle tre stelle, il motore con il riduttore collegato alla stella principale e sopratutto da notare la stella di uscita ed il sistema pneumatico necessari a gestire lo scarto dei flaconi.
+Nella figura \ref{mec2} si possono osservare chiaramente i tre ingranaggi delle tre stelle, il motore con il riduttore collegato alla stella principale, la stella di uscita ed il sistema pneumatico necessari a gestire lo scarto dei flaconi.
 
 \begin{figure}[H]
 	\centering
@@ -87,28 +85,89 @@ Nella figura \ref{mec2} si possono vedere chiaramente i tre ingranaggi delle tre
 
 
 
-
-
-
 Dettagli meccanici - Dimensione -Elementi(Natsro in e out) - stella ingresso,centrale,scarto - raccoglitore Scarto - guide regolabili per dispositivi - struttura di acciaio con porte di plexiglass
 \section{Dispositivi Elettrici ed Elettronici}
-Dispositivi Elettrici ed elettronici
+I dispostivi elettrici ed elettronici che compongono l'etichettatrice sono molteplici. Essi rappresentano l'anima della macchina stessa in quanto permettono a tutto il processo di prendere vita.
+Di seguito sono elencati i vari dispositivi dell'etichettatrice.
+
+\begin{itemize}
+	
+	\item \textit{HERMA 400 Labeling Machine}	
+	L'elemento più importante di tutta la macchina è proprio il gruppo di etichettatura che, sebbene risulti essere un ibrido tra meccanica ed elettronica, è presentato in questa sezione perchè è completamente gestito da una scheda interna, presentando vari sensori e dispositivi necessari al proprio funzionamento.
+	
+
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/ELE1}
+		\label{ele1}
+		\caption{HERMA 400}
+	\end{figure}
+	
+	
+	Il gruppo di etichettatura della Herma è un dispositivo molto efficiente e complesso. Ha una velocità di etichettatura che può andare ben oltre i 400 pz/min ed è facilmente integrabile in qualsiasi sistema, poichè richiede pochissimi accorgimenti esterni. Non è inoltre necessario riconfigurare i vari formati di etichetta poichè essa dispone di un sensore di autoapprendimento che determina la lunghezza dell'etichetta \ref{ele2}.
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/ELE2}
+		\label{ele2}
+		\caption{HERMA 400 Sensore Autoapprendimento}
+	\end{figure}
+	
+	 Per ottimizzare l'etichettatura la Herma mette a disposizione un particolare encoder da collegare al massaggiatore della macchina. Grazie ad esso essa regola automaticmente la velocità con la quale espellere l'etichetta. L'unico comando necessario all'etichettatrice per poter funzionare è un trigger digitale che comanda l'espulsione di una etichetta. Naturalmente è difficile determinare se e quando dare il comando. Ma questo è un problema che analizzeremo nei capitoli relativi alla programmazione del software plc ed al controllo mediante sistema di visione.  
+	
+	\item \textit{Mitsubishi HG-Series Motors}
+	Sono i motori utilizzati sia dal motore principale che dal massaggiatore. Sono dei motori brushless ad elevatissime prestazioni ed estremamente compatti. Posso essere utilizzati standalone oppure, come nel nostro caso, mediante degli specifici azionamenti che ne consentono un pieno controllo. 
+	
+	\item \textit{Mitsubishi MR-J4-TM Servo}
+	Si riferisce agli azionamenti utilizzati per la gestione e controllo dei servo motori Mitsubishi. Esistono in vari modelli in base alla comunicazione necessaria. Nel nostro caso abbiamo optato per la versione con il Profinet poichè lavoriamo con un PLC Siemens. Questo consente di inviare comandi dal PLC all'azionamento e pertanto comandare il motore. Le specifiche metodologie di comunicazione verranno descritte nel capitolo relativo alla Comunicazione
+	
+	\item \textit{Mitsubishi FR-D700SC}
+	E' un particolare inverter Mitsubishi che permette di comandare la velocità di un qualsiasi motore agendo sulla frequenza. Essa permette il controllo della velocità mediante un segnale analogico in tensione che va dai 0 ai 10V. Questo segnale può essere inviato da qualunque sorgente, nel nostro caso il PLC (in particolare dal modulo di uscita Analogica). Essa dispone inoltre di un comando digitale a contatto pulito che ne consente lo start and stop. Questo Inverter è stato utilizzato per poter gestire la velocità del nastro trasportatore pricipale di ingresso e uscita.
+	
+	\item \textit{Datalogic P-Series}
+	Sono le telecamere di Visione che si occupano di tutto il controllo qualità della macchina. Esse sono delle telecamere estremamente performanti con risoluzione di 1.3MP a Colori, compatibile con vari sistemi di comunicazione tra cui TCP-EtherCat-Profinet. Sono programmabili con oltre 30 tool di ispezione mediante il software proprietario Impact. Nell'etichettatrice ne sono stati applicati due: una prima telecamera per il controllo validità delle stampe dell'etichette (prima che esse vengano applicate sul flacone) e una seconda per verificare l'eventuale presenza ed allineamento dell'etichetta (successivamente all'applicazione).
+	
+	\item \textit{VideoJet DataFlex 6530}
+	E' una stampante termica per utilizzo in applicazioni industrial ad alta velocità. Essa riesce a stampare con una freqenza oltre le 300 stampe per minuto. Dispone di un server web integrato per la configurazione oppure di un pannello LCD esterno. La comunicazione avviene tramite uno standard I/O e tramite TCP. Questa stampante viene utilizzata per stampare sull'etichetta i dati relativi al lotto attivo (quali nome e scadenza) ed anche a stampare il pharmacode (un particolare datamatrix utilizzato nel campo pharmaceutico)
+	
+	\item \textit{Sick Encoder AFM60 PROFINET}
+	Si tratta di un encoder assoluto a 30 bit di alta risoluzione 
+	Possiede un'interfaccia profinet il che lo rende estremamente compatibile e semplice da gestire con il PLC siemens. Ha un tempo di aggiornamento dati inferiore a 5 ms e tramite profinet è capace di comunicare allarmi, avvertenze e funzioni di diagnosi per velocità, posizione, temperatura, durata del funzionamento ecc. Questo encoder è stato montato sul meccanismo della stella in ingresso in modo da tener traccia della posizione della macchina in tempo reale e pertanto gestire le varie camme della macchina.
+
+	\item \textit{Siemens Simatic ET200S e Moduli I/0}	
+	PLC controller con CPU-1510SP-SIMATIC-DP(1) è una unità centrale con 100kb di memoria lavoro e 750KB per i dati. Dispone di un'interfaccia Profinet ed ha una performance di bit di 72NS. Necessita di una memory card Simatic Siemens per il programma.
+	La sua programmazione avviene tramite la suite Siemens WinCC conosciuta ora come tiaPortal. 
+	Si ricorda che questa unità centrale non dispone di ingressi ed uscite pertanto necessita di moduli aggiuntivi. Nello specifico caso sono stati aggiunti ben 6 moduli di cui:
+	\begin{itemize}
+		\item \textit{3 Moduli di 16 Ingressi Digitali(2)}
+		\item \textit{2 Moduli di 16 Uscite Digitali(3)}
+		\item \textit{1 Modulo di 4 Uscite Analogiche(4)}
+	\end{itemize}
+
+	\item \textit{ASEM HMI Panel HT2150}
+	Panel PC da 12 pollici basata con processore Celeron J1900 quad core 2GHz a 64 bit.	La motherboard include due porte Ethernet 10/100/1000Mbps con supporto alle funzionalità "Jumbo Frame" e "Wake on Lan", una porta USB 2.0, una porta USB 3.0 ed uno slot per CFast SATA II ad accesso esterno posteriore, un connettore mSATA per l’installazione di una SSD SATA II, RAM fino a 8 GB con un modulo SODIMM DDR3 e un connettore interno per l’installazione di interfacce seriali e USB aggiuntive.
+	Sistema Operativo Microsoft Windows Embedded 7.0
+	
+	
+\end{itemize}
+
 \section{Funzionamento del Macchinario}
-Prima di spiegare il funzionamento dettagliato del macchinario, conviene introdurre brevemente il suo funzionamento base. Per semplificare il tutto dividerò a fasi il processo di etichettaggio.
+Prima di spiegare il funzionamento dettagliato del macchinario, conviene introdurre brevemente il suo funzionamento base. Per maggiore chiarezza il processo di etichettaggio verrà descritto a fasi.
 
 Il funzionamento base del macchinario è abbastanza semplice. 
 \begin{itemize}
-	\item \textit{Ingresso Flaconi} All ingresso alla nostra etichettatrice abbiamo un nastro trasportatore che arriva dalla macchina precedente che nel caso di questa linea è una macchina riempitrice.
-	\item \textit{Controllo Presenza}  I flaconi uscenti dalla riempitrice scorrono sul nastro fino al raggiungimento della prima stella. Durante il trasporto nella prima stella, ogni flacone viene rilevato dal sensore di presenza prodotto.
-	\item \textit{Etichettatura} Successivamente il flacone viene agganciato dalla seconda stella che lo trasporta sull'unità di etichettaggio. Quando il flacone si trova in prossimità della "pinna", viene attivata la testa di etichettatura che effettuerà l'applicazione.
-	\item \textit{Massaggio} Quasi istantaneamente all'applicazione, il flacone rotola su un nastro detto massaggiatore che assicura una corretta attaccatura dell'etichetta.
-	\item \textit{Uscita Flacone} A questo punto il flacone viene agganciato dalla terza ed ultima stella che lo trasporta sul nastro di uscita verso la macchina a valle. 
+	\item \textit{Ingresso Flaconi:} all ingresso all' etichettatrice abbiamo un nastro trasportatore che arriva dalla macchina precedente, che nel caso di questa linea è una macchina riempitrice.
+	\item \textit{Controllo Presenza:}  i flaconi uscenti dalla riempitrice scorrono sul nastro fino al raggiungimento della prima stella. Durante il trasporto nella prima stella, ogni flacone viene rilevato dal sensore di presenza prodotto.
+	\item \textit{Etichettatura:} successivamente il flacone viene agganciato dalla seconda stella che lo trasporta sull'unità di etichettaggio. Quando il flacone si trova in prossimità della "pinna", viene attivata la testa di etichettatura che effettuerà l'applicazione.
+	\item \textit{Massaggio:} quasi istantaneamente all'applicazione, il flacone rotola su un nastro detto massaggiatore che assicura una corretta applicazione dell'etichetta.
+	\item \textit{Uscita Flacone:} a questo punto il flacone viene agganciato dalla terza ed ultima stella che lo trasporta sul nastro di uscita verso la macchina a valle. 
 \end{itemize}
 
 Avendo sommariamente illustrato il funzionamento base della nostra etichettatrice tralasciando controlli, sistemi di visione, meccanismi di scarto ed altro, andiamo ora a spiegare un po più nel dettaglio cosa avviene realmente in ogni fase.
 
 \subsection{Ingresso Flaconi}
-Nella fase di ingresso flaconi, come si può ben immaginare non vi è solo un semplice nastro che trasporta i flaconi da un punto ad un altro bensì vi sono alcuni controlli necessari per un corretto funzionamento del macchinario nonchè di protezione del sistema stesso. Prima di tutto il nastro in ingresso è regolabile in velocità mediante un inverter per assicurare che i flaconi arrivino con una giusta frequenza. 
+Nella fase di ingresso flaconi, come si può ben immaginare, non vi è solo un semplice nastro che trasporta i flaconi da un punto ad un altro, bensì vi sono alcuni controlli necessari per un corretto funzionamento del macchinario, nonchè di protezione del sistema stesso. Il nastro in ingresso è regolabile in velocità mediante un inverter per assicurare che i flaconi arrivino con una giusta frequenza. 
 
 \begin{figure}[H]
 	\centering
@@ -117,8 +176,8 @@ Nella fase di ingresso flaconi, come si può ben immaginare non vi è solo un se
 	\caption{ Nastro in Ingresso}
 \end{figure}
 
- Non manca sul nastro in ingresso il sensore di minimo carico che segnala il plc qualora non ci sia prodotto. Alla ricezione di tale segnale il plc provvederà a fermare la macchina che altrimenti girerebbe inutilmente (vi sono inoltre anche segnali di abilitazione che arrivano dalla macchina a monte necessari a segnalare un interruzione della linea).
-Un problema non da sottovalutare nella nostra applicazione è la possibilità che un flacone si rovesci su nastro o arrivi già rovesciato dalla macchina a monte (mai fidarsi di chi si ha prima). Un flacone rovesciato potrebbe essere estremamente pericoloso, se la stella alla fine del nastro dovesse mai agganciare un flacone di vetro mal posizionato lo farebbe in mille pezzi e richierebbe di danneggiare la macchina. Per evitare ciò, abbiamo munito il minimo carico di doppio sensore (uno alto ed uno basso). 
+ Non manca sul nastro in ingresso il sensore di minimo carico che segnala il plc qualora non ci sia prodotto. Alla ricezione di tale segnale il plc provvederà a fermare la macchina che altrimenti girerebbe inutilmente (vi sono inoltre anche segnali di abilitazione che arrivano dalla macchina a monte, necessari a segnalare un interruzione della linea).
+Un problema da non sottovalutare nella nostra applicazione è la possibilità che un flacone si rovesci su nastro o arrivi già rovesciato dalla macchina a monte. Un flacone rovesciato potrebbe essere estremamente pericoloso: se la stella alla fine del nastro dovesse agganciare un flacone di vetro mal posizionato lo farebbe in mille pezzi e rischierebbe di danneggiare la macchina. Per evitare ciò, abbiamo munito il minimo carico di doppio sensore (uno alto ed uno basso). 
 
 \begin{figure}[H]
 	\centering
@@ -127,10 +186,10 @@ Un problema non da sottovalutare nella nostra applicazione è la possibilità ch
 	\caption{ Doppio Sensore Carico Minimo ed anti rovesciamento flacone}
 \end{figure}
 
- Questi due sensori lavorano in contemporanea uno sopra l'altro in modo tale che se un flacone dovesse passare rovesciato, solo il sensore basso ne rileverebbe la presenza. Questa situazione manda un allarme che blocca immediatamente la macchina avvisando l'operatore con una segnalazione sul pannello operatore e mediante il torrino luminoso.  
+ Questi due sensori lavorano in contemporanea uno sopra l'altro, in modo che se un flacone dovesse passare rovesciato, solo il sensore basso ne rileverebbe la presenza. Questa situazione manda un allarme che blocca immediatamente la macchina avvisando l'operatore con una segnalazione sul pannello operatore e mediante il torrino luminoso.  
    
 \subsection{Controllo Presenza}
-In questa fase che sembra la più banale inizia il vero fulcro del controllo che si porterà avanti per tutto il processo. Il flacone viene agganciato dalla prima stella e durante il trasporto il sensore di presenza ne verifica la presenza. 
+In questa fase, che sembra la più banale, inizia il vero fulcro del controllo che si porterà avanti per tutto il processo. Il flacone viene agganciato dalla prima stella e durante il trasporto il sensore di presenza ne verifica la presenza. 
 
 \begin{figure}[H]
 	\centering
@@ -145,7 +204,7 @@ Questo momento è cruciale perchè è quì che si attiva lo "Shift Register" del
 
 
 \subsection{Etichettatura}
-Sicuramente la Fase più importante di tutto il processo, l'etichettatura è anche la più complessa a livello di controlli e settaggio. Il flacone una volta rilevato dal sensore di presenza, viene agganciato dalla seconda stella che lo trasporta sulla pinna di etichettatura. Una volta che il flacone si trova in prossimità della pinna viene inviato un comando di trigger digitale alla testa di etichettatura che applicherà l'etichetta. 
+Sicuramente una delle fasi più importanti di tutto il processo, l'etichettatura è anche la più complessa a livello di controlli e settaggio. Il flacone, una volta rilevato dal sensore di presenza, viene agganciato dalla seconda stella che lo trasporta sulla pinna di etichettatura. Una volta che esso si trova in prossimità della pinna, viene inviato un comando di trigger digitale alla testa di etichettatura che espellerà l'etichetta. 
 
 \begin{figure}[H]
 	\centering
@@ -155,7 +214,7 @@ Sicuramente la Fase più importante di tutto il processo, l'etichettatura è anc
 \end{figure}
 
 \subsection{Massaggio}
-Come precedentemente anticipato il massaggio avviene nella fase immediatamente successiva all'applicazione etichette. Il massaggiatore come si evince dalla figura \ref{MEC7} massaggia l'etichetta sul flacone per assicurarne l'adesione. Per ottimizzarne l'adesione, ci si deve assicurare che la velocità con la quale viene applicata l'etichetta sia pressocchè simile a quella di rotolamento del flacone. Per questo motivo abbiamo munito il massaggiatore di un encoder (1) che comunica all'unità di etichettatura l'attuale velocità lineare del nastro affinchè regoli automaticamente la velocità di espulsione delle singole etichette.
+Come precedentemente anticipato, il massaggio avviene nella fase immediatamente successiva all'applicazione etichette. Il massaggiatore, come si evince dalla figura \ref{MEC7}, massaggia l'etichetta sul flacone per assicurarne l'adesione. Per ottimizzarne l'adesione, ci si deve assicurare che la velocità con la quale viene applicata l'etichetta sia pressocchè simile a quella di rotolamento del flacone. Per questo motivo abbiamo munito il massaggiatore di un encoder (1) che comunica all'unità di etichettatura l'attuale velocità lineare del nastro affinchè regoli automaticamente la velocità di espulsione delle singole etichette.
 
 \begin{figure}[H]
 	\centering
@@ -165,7 +224,7 @@ Come precedentemente anticipato il massaggio avviene nella fase immediatamente s
 \end{figure}
 
 \subsection{Uscita Flacone}
-L'ultima Fase del processo di etichettatura è quella di Uscita e Scarto. Dopo aver applicato l'etichetta e verificata la qualità del prodotto spetta all'ultima stella decidere se rilasciare o meno il flacone sul nastro di uscita. Come accennato precedentemente, la stella di uscita possiede delle ventose ref{mec8} per catturare il flacone e dirigerlo verso il nastro oppure verso lo scarto in base al risultato dei vari controlli effettuati durante il processo.
+L'ultima fase del processo di etichettatura è quella di Uscita e Scarto. Dopo aver applicato l'etichetta e verificato la qualità del prodotto, spetta all'ultima stella decidere se rilasciare o meno il flacone sul nastro di uscita. Come accennato precedentemente, la stella di uscita possiede delle ventose ref{mec8} per catturare il flacone e dirigerlo verso il nastro oppure verso lo scarto, in base al risultato dei vari controlli effettuati durante il processo.
 
 \begin{figure}[H]
 	\centering
@@ -174,7 +233,7 @@ L'ultima Fase del processo di etichettatura è quella di Uscita e Scarto. Dopo a
 	\caption{ Stella di Scarto }
 \end{figure}
 
-Nella figura possiamo notare come ciò avviene. Nel caso di flacone non conforme rilevato dai sistemi di controllo, la stella di uscita che avrà agganciato precedentemente il flacone con il vuoto nella specifica ventosa, invece di rilasciare il vuoto in prossimità del nastro, manterrà il flacone agganciato fino al raggungimento della zona di scarto. Raggiunta questa zona le ventose rilasciano automaticamente il vuoto lasciando cadere il flacone non conforme nel raccoglitore di scarto \ref{mec9}. 
+Nella figura possiamo notare come ciò avviene: nel caso di flacone non conforme rilevato dai sistemi di controllo, la stella di uscita che avrà agganciato precedentemente il flacone con il vuoto della specifica ventosa, invece di rilasciare il vuoto in prossimità del nastro, manterrà il flacone agganciato fino al raggungimento della zona di scarto. Raggiunta questa zona le ventose rilasciano automaticamente il vuoto lasciando cadere il flacone non conforme nel raccoglitore di scarto \ref{mec9}. 
 
 \begin{figure}[H]
 	\centering
@@ -189,8 +248,41 @@ Un \textit{PLC} è, in pratica, un controllore programmabile, dotato di ingressi
 I PLC sono di solito istallati in armadi nelle vicinanze dell'impianto o direttamente a bordo della macchina. Gli I/O possono essere remoti: in questo caso sono collegati a morsettiere che vengono messe in comunicazione con il PLC mediante "bus di campo" o anche direttamente su Ethernet. Sono necessarie postazioni utilizzate dagli operatori per "vedere" e capire cosa succede negli impianti, dato che i PLC sono dei dispositivi "ciechi" non dotati di interfaccia di visualizzazione.
 \\La prima azione che il PLC compie è la lettura degli ingressi del portale e si intende tutti gli ingressi sia digitali sia analogici, on board o su bus di campo (schede remote collegate al PLC o con una rete di comunicazione). Dopo aver letto tutti gli ingressi, il loro stato viene memorizzato in una memoria che è definita "\textit{Registro immagine degli ingressi}". A questo punto le istruzioni di comando vengono elaborate in sequenza dalla CPU e il risultato viene memorizzato nel "\textit{Registro immagine delle uscite}". Infine, il contenuto dell'immagine delle uscite viene scritto sulle uscite fisiche, ovvero le uscite vengono attivate. Poiché l'elaborazione delle istruzioni si ripete continuamente, si parla di elaborazione ciclica; il tempo che il controllore impiega per una singola elaborazione viene detto tempo di ciclo (solitamente da 10 a 100 millisecondi).
 \section{Fase Iniziale }
-Si parte dalla attenta analisi degli schemi elettrici della macchina (FOTO SCHEMA ELETTRICO)
-Scelta tool e TIA PORTAL
+Nella Fase iniziale dello sviluppo di un software PLC bisogna innanzitutto conoscere molto bene l'intero processo della macchina. In questa fase si studia la macchina a partire dai requisiti richiesti dal cliente. Vi è un lungo confronto tra i vari team di sviluppo Meccanico, Elettrico e Informatico per cercare di minimizzare l'errore. Il programmatore PLC solitamente entra in gioco quando il processo macchina è già ben definito pertanto si conoscono già quasi tutti i sensori della macchina, i comandi in uscita ecc. 
+Tutte queste informazioni sono riportate sullo Schema Elettrico della macchina.
+\textcolor{red}{immagine di schema elettrico}
+
+Con lo schema elettrico il programatore può già incominciare a configurare il PLC definendo le variabili di Input Output sui vari moduli I/O. 
+
+\subsection{Configurazione Iniziale con TiaPortal v13}
+	Avendo PLC Siemens naturalmente il software utilizzato è TiaPortal nello specifico la versione 13.
+	TiaPortal consente molto agevolmente di creare l'architettura della macchina slezionando i componenti da un catalogo interno. I vari componenti Hardware possono essere ricercati tramite codice identificativo riportato sul componente stesso oppure tramite metodo di autoapprendimento via Profinet. Al termine della configurazione PLC con i vari Moduli I/O la vista di rete di TiaPortal risulta la seguente.
+	
+	\textcolor{red}{configurazione plc tiaportl}
+
+	Una volta importati vari componenti del rack PLC si possono definire ed impostare le variabili I/O in modo da risultare coerente con lo schema elettrico della macchina.
+	
+	Finita la procedura di configurazione del rack PLC si può passare all'aggiunta dei vari componenti Profinet della macchina. 
+	Ricordiamo che i componenti compatibili Profinet della nostra etichettatrice sono:
+	\begin{itemize}
+		\item Azionamento Mitsubishi Motore Principale
+		\item Azionamento Mitsubishi Motore Massaggiatore
+		\item Telecamera Datalogic Contollo Etichetta
+		\item Telecamera Datalogic Controllo Allineamento
+		\item Encoder Sick Assoluto
+	\end{itemize}
+
+	Per poter importare un componente Profinet-Compatible su TiaPortal necessitiamo di un GSD (General Station Description) 
+	I file GSD rappresentano un file formattato in XML, fornito dal produttore, che descrive il componente in termini di caratteristiche di comunicazione, struttura dei dati di ingresso ed uscita, diagnostica, parametri di impostazione. Tramite il GSD TiaPortal potrà sapere come comunicare con il Registro del dispositivo e pertanto ricevere ed inviare informazioni ad esso. Il GSD tuttavia non da un'interfaccia sui comandi inviabili o dati ricevibili dal dispositivo, questo task spetta al programmatore che deve studiare la comunicazione Profinet di ogni signolo dispositivo e scoprire su quali registri scrivere (per inviare comandi) o leggere (per ricevere informazioni). I dettagli sulle comunicazoni Profinet dei vari dispositivi verranno visti nel capitolo \cite{profinet}
+	Una volta importati i GSD dei vari dispositivi TiaPortal ne mappa i registri in variabili di Memoria Locale al PLC in modo da semplificarne l'accesso. 
+	
+	\textcolor{red}{IMMAGINE TIA PORTAL MAPPA GSD PROFINET}
+	
+	Tutti i dispositivi profinet inoltre devono avere un indirizzo di rete univoco ed essere nella stessa SubNet. Gli indirizzi di rete sono configurabili in TiaPortal tramite un tool che rileva tutti i dispositivi direttamente connessi all Switch tramite un broadcast a Livello 2 che permette la visualizzazione di tutti gli indirizzi MAC dei dispositivi profinet connessi. A questo punto risulta molto semplice assegnare l'indirizzo IP a ciascun dispositivo.
+	
+	\textcolor{red}{IMMAGINE TIA PORTAL RETE COMPLETA}
+	
+	Con questo si può dare per conclusa la fase di inizializzazione del progetto software PLC
 
 \section{Best Practices}
 spiegazione delle best practice sul come strutturare un software PLC REMAPPING I/O, utilizzo di FB per dispositivi esterni (MOTORI MITSUBISHI - TELECAMERE DATALOGIC - ENCODER MACCHINA - STAMPANTE - NORMALIZZAZIONI) GSD
