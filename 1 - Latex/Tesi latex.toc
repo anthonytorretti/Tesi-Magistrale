@@ -1,47 +1,69 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{\numberline {1}Etichettatrice RMC17002}{5}
-\contentsline {section}{\numberline {1.1}Struttura Meccanica}{5}
-\contentsline {section}{\numberline {1.2}Dispositivi Elettrici ed Elettronici}{7}
-\contentsline {section}{\numberline {1.3}Funzionamento del Macchinario}{12}
-\contentsline {subsection}{\numberline {1.3.1}Ingresso Flaconi}{12}
-\contentsline {subsection}{\numberline {1.3.2}Controllo Presenza}{14}
-\contentsline {subsection}{\numberline {1.3.3}Etichettatura}{15}
-\contentsline {subsection}{\numberline {1.3.4}Massaggio}{16}
-\contentsline {subsection}{\numberline {1.3.5}Uscita Flacone}{17}
-\contentsline {chapter}{\numberline {2}Processo di Sviluppo software PLC}{20}
-\contentsline {section}{\numberline {2.1}Fase Iniziale }{21}
-\contentsline {subsection}{\numberline {2.1.1}Configurazione Iniziale con TiaPortal v13}{21}
-\contentsline {section}{\numberline {2.2}Best Practices}{23}
-\contentsline {section}{\numberline {2.3}Comunicazione Con Dispositivi Macchina}{23}
-\contentsline {section}{\numberline {2.4}Camme Digitali e Sistemi di Controllo}{23}
-\contentsline {section}{\numberline {2.5}Controllo Mediante Shift Register}{25}
-\contentsline {chapter}{\numberline {3}Protocolli di comunicazione}{26}
-\contentsline {section}{\numberline {3.1}Profinet}{26}
-\contentsline {subsection}{\numberline {3.1.1}Caratteristiche}{27}
-\contentsline {section}{\numberline {3.2}TCP}{28}
-\contentsline {subsection}{\numberline {3.2.1}Server e client}{30}
-\contentsline {subsection}{\numberline {3.2.2}Incapsulamento dei dati}{30}
-\contentsline {subsection}{\numberline {3.2.3}Descizione livelli}{31}
-\contentsline {subsubsection}{Livello Accesso di rete (host to network)}{31}
-\contentsline {subsubsection}{Il livello Internet}{31}
-\contentsline {subsubsection}{Il livello di trasporto}{32}
-\contentsline {subsubsection}{Il livello applicazione}{32}
-\contentsline {section}{\numberline {3.3}Open Platform Communications (OPC)}{33}
-\contentsline {subsection}{\numberline {3.3.1}Architettura client/server}{34}
-\contentsline {subsection}{\numberline {3.3.2}Unified Architecture}{35}
-\contentsline {chapter}{\numberline {4}Schema generale di comunicazione}{38}
-\contentsline {section}{\numberline {4.1}Profinet Mitsubishi}{38}
-\contentsline {section}{\numberline {4.2}Profinet Datalogic}{38}
-\contentsline {section}{\numberline {4.3}TCP Stampante VideoJet}{38}
-\contentsline {chapter}{\numberline {5}HMI/SCADA}{39}
-\contentsline {section}{\numberline {5.1}HMI dell'Etichettatrice}{39}
-\contentsline {section}{\numberline {5.2}Tool Sviluppo}{40}
-\contentsline {section}{\numberline {5.3}Industria 4.0}{40}
-\contentsline {subsection}{\numberline {5.3.1}OPC}{40}
-\contentsline {subsection}{\numberline {5.3.2}RealTime Sql DataBinding}{40}
-\contentsline {subsection}{\numberline {5.3.3}Reporting Server}{40}
-\contentsline {subsection}{\numberline {5.3.4}SCADA Web Interfaces}{40}
-\contentsline {section}{\numberline {5.4}Code of Federal Regulations Title 21}{40}
-\contentsline {subsection}{\numberline {5.4.1}Specifiche 21CFR}{40}
-\contentsline {subsection}{\numberline {5.4.2}Realizzazione}{40}
+\contentsline {chapter}{\numberline {1}Etichettatrice RMC17002}{7}
+\contentsline {section}{\numberline {1.1}Struttura Meccanica}{7}
+\contentsline {section}{\numberline {1.2}Dispositivi Elettrici ed Elettronici}{9}
+\contentsline {section}{\numberline {1.3}Funzionamento del Macchinario}{18}
+\contentsline {subsection}{\numberline {1.3.1}Ingresso Flaconi}{19}
+\contentsline {subsection}{\numberline {1.3.2}Controllo Presenza}{21}
+\contentsline {subsection}{\numberline {1.3.3}Etichettatura}{22}
+\contentsline {subsection}{\numberline {1.3.4}Massaggio}{23}
+\contentsline {subsection}{\numberline {1.3.5}Uscita Flacone}{24}
+\contentsline {chapter}{\numberline {2}Processo di Sviluppo software PLC}{27}
+\contentsline {section}{\numberline {2.1}Fase Iniziale }{28}
+\contentsline {subsection}{\numberline {2.1.1}Configurazione Iniziale con TiaPortal v13}{30}
+\contentsline {section}{\numberline {2.2}Struttura Software PLC}{32}
+\contentsline {subsection}{\numberline {2.2.1}Linguaggi di Programmazione}{33}
+\contentsline {subsubsection}{Il linguaggio Structured Text}{34}
+\contentsline {subsubsection}{Il linguaggio Instruction List}{35}
+\contentsline {subsubsection}{Il linguaggio Sequential Functional Chart}{36}
+\contentsline {subsubsection}{Il linguaggio Function Block Diagram}{37}
+\contentsline {subsubsection}{Il linguaggio Ladder Diagram}{38}
+\contentsline {subsection}{\numberline {2.2.2}Linguaggio di Programmazione Ladder Diagram}{39}
+\contentsline {subsection}{\numberline {2.2.3}Caratteristiche e Confronto con Linguaggi di programmazione tradizionali}{41}
+\contentsline {section}{\numberline {2.3}Best Practices}{44}
+\contentsline {subsection}{\numberline {2.3.1}I/O Mapping}{45}
+\contentsline {subsection}{\numberline {2.3.2}Function Blocks}{46}
+\contentsline {section}{\numberline {2.4}Camme Digitali e Sistemi di Controllo}{47}
+\contentsline {section}{\numberline {2.5}Controllo Mediante Shift Register}{50}
+\contentsline {chapter}{\numberline {3}Protocolli di comunicazione}{57}
+\contentsline {section}{\numberline {3.1}Profinet}{57}
+\contentsline {subsection}{\numberline {3.1.1}Caratteristiche}{58}
+\contentsline {section}{\numberline {3.2}TCP}{59}
+\contentsline {subsection}{\numberline {3.2.1}Server e client}{61}
+\contentsline {subsection}{\numberline {3.2.2}Incapsulamento dei dati}{61}
+\contentsline {subsection}{\numberline {3.2.3}Descizione livelli}{62}
+\contentsline {subsubsection}{Livello Accesso di rete (host to network)}{62}
+\contentsline {subsubsection}{Il livello Internet}{62}
+\contentsline {subsubsection}{Il livello di trasporto}{63}
+\contentsline {subsubsection}{Il livello applicazione}{63}
+\contentsline {section}{\numberline {3.3}Open Platform Communications (OPC)}{64}
+\contentsline {subsection}{\numberline {3.3.1}Architettura client/server}{65}
+\contentsline {subsection}{\numberline {3.3.2}Unified Architecture}{66}
+\contentsline {chapter}{\numberline {4}Schema generale di comunicazione}{69}
+\contentsline {section}{\numberline {4.1}Profinet Mitsubishi}{69}
+\contentsline {section}{\numberline {4.2}Profinet Datalogic}{69}
+\contentsline {section}{\numberline {4.3}TCP Stampante VideoJet}{69}
+\contentsline {chapter}{\numberline {5}Sviluppo Sistema di Visione}{70}
+\contentsline {subsection}{\numberline {5.0.1}Datalogic Impact Sofwtare Suite}{70}
+\contentsline {subsection}{\numberline {5.0.2}Datalogic VPM}{71}
+\contentsline {subsection}{\numberline {5.0.3}Datalogic CPM}{75}
+\contentsline {subsection}{\numberline {5.0.4}Programma di Visione LabelTech}{76}
+\contentsline {subsection}{\numberline {5.0.5}Control Panel Manager LabelTech}{83}
+\contentsline {chapter}{\numberline {6}HMI/SCADA}{86}
+\contentsline {subsection}{\numberline {6.0.1}Tipologie di HMI}{87}
+\contentsline {subsection}{\numberline {6.0.2}Progettazione di un Interfaccia}{88}
+\contentsline {subsection}{\numberline {6.0.3}Requisiti progettuali di un Interfaccia Utente}{90}
+\contentsline {subsection}{\numberline {6.0.4}Paradigma MVC}{91}
+\contentsline {subsection}{\numberline {6.0.5}Comunicazione Tra PLC ed HMI}{92}
+\contentsline {subsection}{\numberline {6.0.6}Caratteristiche del Software SCADA}{93}
+\contentsline {section}{\numberline {6.1}HMI dell'Etichettatrice}{94}
+\contentsline {section}{\numberline {6.2}Tool Sviluppo}{95}
+\contentsline {section}{\numberline {6.3}Industria 4.0}{95}
+\contentsline {subsection}{\numberline {6.3.1}OPC}{95}
+\contentsline {subsection}{\numberline {6.3.2}RealTime Sql DataBinding}{95}
+\contentsline {subsection}{\numberline {6.3.3}Reporting Server}{95}
+\contentsline {subsection}{\numberline {6.3.4}SCADA Web Interfaces}{95}
+\contentsline {section}{\numberline {6.4}Code of Federal Regulations Title 21}{95}
+\contentsline {subsection}{\numberline {6.4.1}Specifiche 21CFR}{95}
+\contentsline {subsection}{\numberline {6.4.2}Realizzazione}{95}

@@ -119,21 +119,63 @@ Di seguito sono elencati i vari dispositivi dell'etichettatrice.
 	\item \textit{Mitsubishi HG-Series Motors}
 	Sono i motori utilizzati sia dal motore principale che dal massaggiatore. Sono dei motori brushless ad elevatissime prestazioni ed estremamente compatti. Posso essere utilizzati standalone oppure, come nel nostro caso, mediante degli specifici azionamenti che ne consentono un pieno controllo. 
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=8cm]{Immagini/ELE3}
+		\label{ele3}
+		\caption{Motore Brushless Mitsibishi HG-Series}
+	\end{figure}
+	
 	\item \textit{Mitsubishi MR-J4-TM Servo}
 	Si riferisce agli azionamenti utilizzati per la gestione e controllo dei servo motori Mitsubishi. Esistono in vari modelli in base alla comunicazione necessaria. Nel nostro caso abbiamo optato per la versione con il Profinet poichè lavoriamo con un PLC Siemens. Questo consente di inviare comandi dal PLC all'azionamento e pertanto comandare il motore. Le specifiche metodologie di comunicazione verranno descritte nel capitolo relativo alla Comunicazione
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=5cm]{Immagini/ELE4}
+		\label{ele4}
+		\caption{Azionamento Profinet Mitsubishi MR-J4-TM}
+	\end{figure}
 	
 	\item \textit{Mitsubishi FR-D700SC}
 	E' un particolare inverter Mitsubishi che permette di comandare la velocità di un qualsiasi motore agendo sulla frequenza. Essa permette il controllo della velocità mediante un segnale analogico in tensione che va dai 0 ai 10V. Questo segnale può essere inviato da qualunque sorgente, nel nostro caso il PLC (in particolare dal modulo di uscita Analogica). Essa dispone inoltre di un comando digitale a contatto pulito che ne consente lo start and stop. Questo Inverter è stato utilizzato per poter gestire la velocità del nastro trasportatore pricipale di ingresso e uscita.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=6cm]{Immagini/ELE6}
+		\label{ele6}
+		\caption{Inverter di Frequenza Mitsubishi FR-D700SC}
+	\end{figure}
+	
 	\item \textit{Datalogic P-Series}
 	Sono le telecamere di Visione che si occupano di tutto il controllo qualità della macchina. Esse sono delle telecamere estremamente performanti con risoluzione di 1.3MP a Colori, compatibile con vari sistemi di comunicazione tra cui TCP-EtherCat-Profinet. Sono programmabili con oltre 30 tool di ispezione mediante il software proprietario Impact. Nell'etichettatrice ne sono stati applicati due: una prima telecamera per il controllo validità delle stampe dell'etichette (prima che esse vengano applicate sul flacone) e una seconda per verificare l'eventuale presenza ed allineamento dell'etichetta (successivamente all'applicazione).
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=8cm]{Immagini/ELE5}
+		\label{ele5}
+		\caption{Inverter di Frequenza Mitsubishi FR-D700SC}
+	\end{figure}
 	
 	\item \textit{VideoJet DataFlex 6530}
 	E' una stampante termica per utilizzo in applicazioni industrial ad alta velocità. Essa riesce a stampare con una freqenza oltre le 300 stampe per minuto. Dispone di un server web integrato per la configurazione oppure di un pannello LCD esterno. La comunicazione avviene tramite uno standard I/O e tramite TCP. Questa stampante viene utilizzata per stampare sull'etichetta i dati relativi al lotto attivo (quali nome e scadenza) ed anche a stampare il pharmacode (un particolare datamatrix utilizzato nel campo pharmaceutico)
 	
+		\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{Immagini/ELE8}
+	\label{ele8}
+	\caption{Stampante Termica VideoJet DataFlex 6530}
+\end{figure}
+	
 	\item \textit{Sick Encoder AFM60 PROFINET}
 	Si tratta di un encoder assoluto a 30 bit di alta risoluzione 
 	Possiede un'interfaccia profinet il che lo rende estremamente compatibile e semplice da gestire con il PLC siemens. Ha un tempo di aggiornamento dati inferiore a 5 ms e tramite profinet è capace di comunicare allarmi, avvertenze e funzioni di diagnosi per velocità, posizione, temperatura, durata del funzionamento ecc. Questo encoder è stato montato sul meccanismo della stella in ingresso in modo da tener traccia della posizione della macchina in tempo reale e pertanto gestire le varie camme della macchina.
+
+		\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{Immagini/ELE7}
+	\label{ele7}
+	\caption{Encoder Profinet Sick AFM60}
+\end{figure}
 
 	\item \textit{Siemens Simatic ET200S e Moduli I/0}	
 	PLC controller con CPU-1510SP-SIMATIC-DP(1) è una unità centrale con 100kb di memoria lavoro e 750KB per i dati. Dispone di un'interfaccia Profinet ed ha una performance di bit di 72NS. Necessita di una memory card Simatic Siemens per il programma.
@@ -145,12 +187,32 @@ Di seguito sono elencati i vari dispositivi dell'etichettatrice.
 		\item \textit{1 Modulo di 4 Uscite Analogiche(4)}
 	\end{itemize}
 
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{Immagini/ELE11}
+	\label{ele11}
+	\caption{Siemens Simatic ET200S}
+	\end{figure}
+
 	\item \textit{ASEM HMI Panel HT2150}
 	Panel PC da 12 pollici basata con processore Celeron J1900 quad core 2GHz a 64 bit.	La motherboard include due porte Ethernet 10/100/1000Mbps con supporto alle funzionalità "Jumbo Frame" e "Wake on Lan", una porta USB 2.0, una porta USB 3.0 ed uno slot per CFast SATA II ad accesso esterno posteriore, un connettore mSATA per l’installazione di una SSD SATA II, RAM fino a 8 GB con un modulo SODIMM DDR3 e un connettore interno per l’installazione di interfacce seriali e USB aggiuntive.
 	Sistema Operativo Microsoft Windows Embedded 7.0
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=8cm]{Immagini/ELE9}
+		\label{ele9}
+		\caption{ASEM HMI Panel HT2150}
+	\end{figure}
 	
 \end{itemize}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/ELE10}
+	\label{ele10}
+	\caption{Quadro Elettrico Completo}
+	\end{figure}
 
 \section{Funzionamento del Macchinario}
 Prima di spiegare il funzionamento dettagliato del macchinario, conviene introdurre brevemente il suo funzionamento base. Per maggiore chiarezza il processo di etichettaggio verrà descritto a fasi.
@@ -250,15 +312,42 @@ I PLC sono di solito istallati in armadi nelle vicinanze dell'impianto o diretta
 \section{Fase Iniziale }
 Nella Fase iniziale dello sviluppo di un software PLC bisogna innanzitutto conoscere molto bene l'intero processo della macchina. In questa fase si studia la macchina a partire dai requisiti richiesti dal cliente. Vi è un lungo confronto tra i vari team di sviluppo Meccanico, Elettrico e Informatico per cercare di minimizzare l'errore. Il programmatore PLC solitamente entra in gioco quando il processo macchina è già ben definito pertanto si conoscono già quasi tutti i sensori della macchina, i comandi in uscita ecc. 
 Tutte queste informazioni sono riportate sullo Schema Elettrico della macchina.
-\textcolor{red}{immagine di schema elettrico}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SCELE1}
+	\label{scele1}
+	\caption{Schema di collegamento elettrico generale relativo al PLC ed ai moduli }
+\end{figure}
+
 
 Con lo schema elettrico il programatore può già incominciare a configurare il PLC definendo le variabili di Input Output sui vari moduli I/O. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SCELE2}
+	\label{scele2}
+	\caption{Schema del primo Byte di Ingressi Del Secondo Modulo I/O}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SCELE3}
+	\label{scele3}
+	\caption{Schema elettrico relativo alle Uscite del Modulo Analogico }
+\end{figure}
 
 \subsection{Configurazione Iniziale con TiaPortal v13}
 	Avendo PLC Siemens naturalmente il software utilizzato è TiaPortal nello specifico la versione 13.
 	TiaPortal consente molto agevolmente di creare l'architettura della macchina slezionando i componenti da un catalogo interno. I vari componenti Hardware possono essere ricercati tramite codice identificativo riportato sul componente stesso oppure tramite metodo di autoapprendimento via Profinet. Al termine della configurazione PLC con i vari Moduli I/O la vista di rete di TiaPortal risulta la seguente.
 	
-	\textcolor{red}{configurazione plc tiaportl}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/TIA0}
+		\label{tia0}
+		\caption{Configurazione Tia Portal del Rack PLC}
+	\end{figure}
+
 
 	Una volta importati vari componenti del rack PLC si possono definire ed impostare le variabili I/O in modo da risultare coerente con lo schema elettrico della macchina.
 	
@@ -276,7 +365,14 @@ Con lo schema elettrico il programatore può già incominciare a configurare il 
 	I file GSD rappresentano un file formattato in XML, fornito dal produttore, che descrive il componente in termini di caratteristiche di comunicazione, struttura dei dati di ingresso ed uscita, diagnostica, parametri di impostazione. Tramite il GSD TiaPortal potrà sapere come comunicare con il Registro del dispositivo e pertanto ricevere ed inviare informazioni ad esso. Il GSD tuttavia non da un'interfaccia sui comandi inviabili o dati ricevibili dal dispositivo, questo task spetta al programmatore che deve studiare la comunicazione Profinet di ogni signolo dispositivo e scoprire su quali registri scrivere (per inviare comandi) o leggere (per ricevere informazioni). I dettagli sulle comunicazoni Profinet dei vari dispositivi verranno visti nel capitolo \cite{profinet}
 	Una volta importati i GSD dei vari dispositivi TiaPortal ne mappa i registri in variabili di Memoria Locale al PLC in modo da semplificarne l'accesso. 
 	
-	\textcolor{red}{IMMAGINE TIA PORTAL MAPPA GSD PROFINET}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/TIA1}
+		\label{tia1}
+		\caption{Mapping Variabili GSD Motore Mitsubishi. Il Custom Telegram del GSD Mappa gli ingressi dei registri dell'azionamento sulle variabili I-600 alla I-647 e lo stesso per le uscite rispettivamente Q-600 a Q-647}
+	\end{figure}
+
 	
 	Tutti i dispositivi profinet inoltre devono avere un indirizzo di rete univoco ed essere nella stessa SubNet. Gli indirizzi di rete sono configurabili in TiaPortal tramite un tool che rileva tutti i dispositivi direttamente connessi all Switch tramite un broadcast a Livello 2 che permette la visualizzazione di tutti gli indirizzi MAC dei dispositivi profinet connessi. A questo punto risulta molto semplice assegnare l'indirizzo IP a ciascun dispositivo.
 	
@@ -284,9 +380,251 @@ Con lo schema elettrico il programatore può già incominciare a configurare il 
 	
 	Con questo si può dare per conclusa la fase di inizializzazione del progetto software PLC
 
+\section{Struttura Software PLC}
+
+I sistemi di controllo si basano sul software per controllare il processo produttiva. Questo ti po di attivita si svolge per fasi, dopo la fase di raccolta delle informazioni si passa quella di progettazione , segue quella di implementazione. Come si puo immaginare tale software deve soddisfare dei requisiti di qualità. Per qualita del software si intende la misura in cui un prodotto software soddisfa un certo numero di aspettative rispetto sia al suo funzionamento sia alla sua struttura interna. Gran parte della ricerca nel campo dell’ingegneria del software e dedicata direttamente o indirettamente , al tema della qualità del software. I fattori rispetto a cui misurare o definire la qualita sono le seguenti: 
+\begin{itemize}
+	\item \textit{Correttezza}: Un programma o sistema si dice corretto se si comporta esattamente secondo quanto previsto dalla sua specifica dei requisiti ,se il comportamento del software e quello previsto dai progettisti.  
+	\item \textit{Affidabilità}: Un sistema e tanto più affidabile quanto più raramente si manifestano malfunzionamenti durante l’utilizzo del sistema , tenendo conto che , nella valutazione dell’affidabilità ,errori gravi si considerano solitamente piu influenti rispetto a errori non gravi , indipendentemente dalla frequenza con cui si manifestano.
+	\item \textit{Robustezza}: E la misura di come il sistema si comporta in situazioni impreviste non contemplate dalle specifiche. 
+	\item \textit{Efficenza}: Un sistema e efficiente se usa le risorse ,CPU,memoria , in modo efficiente ovvero in modo proporzionale al servizio che deve svolgere . Un sistema software non efficiente pregiudica le prestazioni di tutto il sistema di controllo.
+	\item \textit{Manutenibilità}: Facilita di apportare modifiche al sistema realizzato( è maggiore se il sistema e ben progettato) ,non corrispondo solo alla correzione degli errori ma comprende anche l’evoluzione del software.
+\end{itemize}
+
+Come in tuti i processi di sviluppo del software ,arrivati alla fine della implementazione si passa alla fase di test e collaudo. Si collauda il software per verificare il comportamento e rilevare errori di programmazione , dopo di che si passa al collaudo del impianto di produzione (chiamata messa in servizio) testando il comportamento di tutto il sistema hardware / software. Anche questo processo di
+sviluppo produce la propria documentazione.
+
+\subsection{Linguaggi di Programmazione}
+I linguaggi utilizzati per la programmazione dei PLC sono generalmente linguaggi a basso livello. Come gia accennato prima alcuni produttori hanno scelto di dividere il codice e i dati in blocchi così da avere una separazione tra blocchi funzione FB e blocchi dati DB.Questo tipo di suddivisione del programma e molto efficace in quanto il programma e più comprensibile, una qualsiasi modifica viene  fatta a livello di blocco sia esso di dati che di funzione.Dopo la stesura del codice il programma deve essere compilato prima di caricarlo nel PLC . Quindi in generale i linguaggi per la programmazione di PLC sono linguaggi compilati. Le norme IEC 1131-3 hanno avuto il merito di cercare di unificare i linguaggi di programmazione piu diffusi nel mondo dei PLC, cercando di evitare il proliferare dei vari dialetti proposti dai diversi costruttori.
+Questi linguaggi si dividono in due gruppi:
+
+\begin{itemize}
+	\item  Linguaggi Testuali 
+		\begin{itemize}
+			\item - ST: Structurated text
+			\item - IL: Istruction list
+		\end{itemize}
+	\item Linguaggi Grafici
+		\begin{itemize}
+			\item - SFC: Sequential function chart
+			\item - FBD: Function block diagram
+			\item - LD: Ladder diagram
+		\end{itemize}
+\end{itemize}
+
+
+Di seguito viene data una breve descrizione di questi linguaggi.
+
+\subsubsection{Il linguaggio Structured Text}
+Il linguaggio testuale Structured Text (ST) rappresenta il passaggio alla programmazione strutturata e di alto livello per i controllori industriali. Mantenendo la semplicita e la chiarezza sintattica necessarie per essere utilizzato con successo nello sviluppo di applicazioni anche complesse, puo essere utilizzato su dispositivi dalle prestazioni computazionali limitate. Il linguaggio ST si presta per la risoluzione in modo rapido ed intuitivo di qualsiasi tipo di compito di programmazione. Tuttavia, dato il campo di applicazione ed il contesto nel quale è definito, considerando cioe anche gli altri linguaggi grafici o testuali della Norma IEC 61131-3, risulta particolarmente adatto per eseguire complesse elaborazioni matematiche, realizzabili con poche righe di codice, oppure nel caso in cui occorra eseguire test condizionali con molteplici alternative, i quali richiederebbero con la logica a contatti o con il linguaggio IL un grande numero di operazioni di salto con la conseguente riduzione di leggibilita del software sviluppato. Strutturalmente assomiglia al linguaggio Pascal. L’immagine in fig:2.13 riporta un esempio di questo linguaggio
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{Immagini/SCL}
+	\label{scl}
+	\caption{Linguaggio SCL}
+\end{figure}
+
+\subsubsection{Il linguaggio Instruction List}
+La tipica applicazione dei PLC industriali consiste nello svolgere compiti di controllo logico con operazione prevalentemente booleane e l’architettura hardware delle loro CPU e ottimizzata per svolgere questo tipo di operazioni in modo semplice e rapido. I linguaggi di livello assemblativo di tali dispositivi sono pertanto basati storicamente su una sintassi del tipo 1 operatore : 1 operando. Con questa sintassi, occorre un particolare tipo di registro interno del processore, detto accumulatore,
+nel quale memorizzare il risultato delloperazione, mentre leventuale secondo operando necessario all’operazione (es. somma logica tra due valori booleani) consiste implicitamente nel contenuto dell’accumulatore stesso. Anche lo standard IEC 61131-3, essendo derivato dall’analisi dettagliata del panorama corrente del mercato PLC, segue questo tipo di sintassi per la definizione del linguaggio
+Instruction List (IL), il linguaggio testuale di livello inferiore nello standard.
+Essendo un linguaggio assemblativo, tutti gli altri linguaggi possono avere un’equivalente in IL, mentre non e sempre possibile convertire codice IL in altri linguaggi. Infatti, l’IL si presta per sua natura alla generazione di codice ottimizzato, il quale tuttavia potrebbe perdere l’equivalenza con codice di alto livello o diagrammi grafici in LD o FBD (trattati in seguito). 
+L’immagine in fig:il riporta un esempio di questo tipo di linguaggio.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/IL}
+	\label{IL}
+	\caption{Linguaggio IL}
+\end{figure}
+
+
+
+\subsubsection{Il linguaggio Sequential Functional Chart}
+Negli anni 70 venne sviluppato un linguaggio grafico, inizialmente di specifica, poi anche di programmazione per il controllo logico. All’inizio venne chiamato Grafcet ,e stato incluso nella norma IEC 1131-3 con il nome di Sequential Functional Chart (SFC). 
+Gli elementi fondamentali di SFC sono i seguenti:
+\begin{itemize}
+	\item Fasi o Tappe
+	\item Transizioni
+	\item Archi Orientati che connettono Fasi a Transizioni o viceversa
+	\item Regole di evoluzione, che definiscono senza ambiguita il comportamento del programma.
+	\item Azioni associate alle fasi.
+	\item Condizioni logiche associate alle Transizioni.
+\end{itemize}
+
+Lo stato di attivazione delle fasi rappresenta lo stato del sistema. Esso viene modificato dall’occorrenza di eventi, che mediante le transizioni portano il sistema in una nuova condizione (con altre fasi attive). In generale il funzionamento e simile ad una macchina a stati finiti in cui il verificarsi di un evento e seguito da una transizione di stato.
+
+L’immagine in fig:2.15 e riportato un esempio di questo linguaggio.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/BLK}
+	\label{BLK}
+	\caption{Linguaggio a blocchi SFC}
+\end{figure}
+
+\subsubsection{Il linguaggio Function Block Diagram}
+Il linguaggio grafico Function Block Diagram (FBD) e un formalismo molto efficacsegnali attraverso una rete di blocchi grafici interconnessi tra loro, secondo uno schema molto simile ai diagrammi che descrivono i circuiti elettronici. Questi blocchi grafici elaborano i segnali collegati ai loro parametri di ingresso e trasmettono i risultati dell’elaborazione attraverso i connettori connessi ai loro parametri di uscita.
+L’immagine in fig:2.16 e riportato un esempio di questo di linguaggio.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/FB}
+	\label{FB}
+	\caption{Linguaggio a Blocchi di Funzioni}
+\end{figure}
+
+\subsubsection{Il linguaggio Ladder Diagram}
+Considerazioni analoghe a quelle fatte sulla definizione dell’linguaggio Instruction List possono essere fatte sul linguaggio grafico Ladder Diagram (LD). Infatti, anche questo linguaggio si basa sull’osservazione delle caratteristiche comuni tra le varie implementazioni della logica di programmazione maggiormente diffusa tra gli utenti di PLC: la logica a contatti o relay ladder logic. Tali caratteristiche comuni sono pertanto unificate nella definizione del LD, in modo da permettere al programmatore di avere una approccio piu immediato ai diversi editor grafici di differenti produttori. Il concetto alla base del LD e quello di rappresentare graficamente un flusso virtuale di corrente elettrica tra due barre di potenziale, regolato da interruttori e bobine, in modo da implementare in modo molto intuitivo una logica booleana: passaggio di corrente = TRUE, assenza di corrente=FALSE. Una riga di codice corrisponde percio ad una rete logica di contatti, Functions, Function Blocks e bobine, connesse da linee (eventualmente estese da etichette testuali dette connettori, in caso di suddivisione su piu righe o pagine) attraversate da un flusso di corrente. La norma stabilisce che il flusso di corrente si intende diretto da sinistra a destra e che le reti vanno valutate (eseguite) dallalto
+verso il basso, a meno che non siano presenti istruzioni di salto o di termine forzato dell’esecuzione.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/LAD}
+	\label{LAD}
+	\caption{Linguaggio a Contatti Ladder}
+\end{figure}
+
+\subsection{Linguaggio di Programmazione Ladder Diagram}
+Un ladder diagram (in italiano diagramma a scala, ma è di uso generale la dizione inglese) è un ausilio grafico per la programmazione dei controllori logici programmabili (PLC) di tipo discreto, divenuto ormai il linguaggio standard di programmazione, a fianco dei linguaggi di tipo assembler, ormai in via di abbandono. La norma EC 61131-3 definisce 5 tipi di linguaggio di programmazione per i PLC: FBD (Function block diagram: a blocchi di funzioni), LD (Ladder diagram), ST (Structured text, testo strutturato, simile al linguaggio Pascal), IL (Instruction list, lista di istruzioni, simile all'assembler) e SFC (Sequential function chart, detto anche GRAFCET). Il linguaggio ladder è stato il primo linguaggio utilizzato per la programmazione del PLC che inizialmente andavano a sostituire i normali quadri a logica cablata che utilizzavano i relè.Nei casi più semplici infatti è facile passare dalle schema funzionale a quello ladder. Con questo linguaggio il programma è scritto all'interno di 2 linee che indicano l'alimentazione.Sono presenti inoltre delle righe orizzontali che congiungono queste verticali che vengono chiamate rung(poli). Queste linee orizzontali si considerano divise in 2 parti.La parte di sinistra è detta zona di test e sono presenti le variabili di ingresso o variabili interne. La zona di destra detta zona di azione comprende le uscite esterne o interne nonché i blocchi di funzione avanzata. L'energia può fluire solo da sinistra verso destra.
+
+La simbologia può variare leggermente tra produttori diversi dei PLC; in alcuni casi è possibile richiamare dei gruppi funzionali, ossia delle subroutine in grado di ripetere determinate operazioni. Di seguito un elenco degli elementi base del linguaggio LADDER
+
+\begin{itemize}
+	
+	\item Bobina: Le bobine sono associate a bit di memoria, tramite i quali possono comandare uscite digitali oppure variare delle condizioni interne. Va inserita sempre all’estremità destra del rung. La bobina si attiva quando
+	passa corrente. Quindi, il bit associato sale al valore logico 1 (ON) se le
+	condizioni logiche alla sua sinistra sono verificate, altrimenti vale 0 (OFF).
+	
+	\item Bobina Latch: Quando si attiva, il bit associato va a 1 e mantiene tale valore finché non si
+	attiva una bobina associata allo stesso bit.
+	Il funzionamento è molto simile ad un flip-flop sollecitato con un impulso
+	di durata finita sull’ingresso SET. 
+	
+	\item Bobina Unlatch: Riporta allo stato logico 0 (OFF) un’uscita (v. ingresso RESET di un flipflop).
+	
+	\item Contatto NO: Se il bit associato vale 1, il contatto è chiuso e c’è continuità logica,
+	altrimenti il contatto è aperto e non c’è continuità logica.
+	Può essere associato a
+	\begin{itemize}
+	\item bit di ingresso (Ix:y, bit y della word x)
+	\item bit di uscita (Ux:y)
+	\item bit associati a variabili interne (Wx:y)
+	\item bit di stato di temporizzatori e contatori
+	\end{itemize}
+	Quasi tutti i sistemi consentono di dare ai bit anche dei nomi
+	simbolici oltre ai nomi legati all’indirizzo fisico di memoria come
+	quelli sopra, per migliorare la leggibilità dei programmi. 
+	
+	\item Contatto NC: Il contatto è chiuso e assicura la continuità logica se la variabile booleana associata è falsa (bit a 0), altrimenti il contatto è aperto. 
+	
+	\item Contatto Positive Edge: Il contatto si chiude sul fronte di salita della variabile booleana
+	associata (ovvero se la variabile passa, tra due successive esecuzioni
+	della stessa istruzione, da falso a vero). 
+	
+	\item Contatto Negative Edge: Il contatto si chiude sul fronte di discesa della variabile associata. 
+	
+	\item TON Timer: Timer che avvia il conteggio quando il segmento di rung che lo precede è abilitato. Una volta trascorso il tempo preimpostato abilita l'uscita.
+	(usato per esempio se si desidera controllare una accensione ritardata di una bobina)
+	
+	\item TOFF Timer: Contariamente al TON abilita l'uscita solo dopo che il rung ch lo precede è disabilitato da un tempo maggiore o uguale al tempo preimpostato (usato per esempio se si desidera controllare uno spegnimento ritardato di una bobina)
+	
+	
+\end{itemize}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/LADELE}
+	\label{L}
+	\caption{Rappresentazione Simbolica di alcuni Elementi Base}
+\end{figure}
+
+
+\subsection{Caratteristiche e Confronto con Linguaggi di programmazione tradizionali}
+	Il Ladder a differenza dei linguaggi di programmazione tradizionali ha un filosofia molto diversa. Questo dovuto al fatto che (come spiegato nell'introduzione di questo capitolo) il PLC abilita le variabili (uscite, bobine ecc.) al termine di ogni ciclo per questo motivo se avessimo per esempio  
+	una bobina comandata da due segmenti di programma diversi, sarà solo l'ultima eseguita in ordine di ciclo ad avere valenza.
+	Nella figura \ref{label} vediamo 2 segmenti(rung) di un programma PLC. Nel primo segmento la bobina B1 è attivata da un contatto C1 mentre nel secondo segmento la medesima bobina azionata dal contatto C2. Per chi è abituato solo a programmare linguaggi tipo Java,Php,Python verrebbe da credere che se chiudo il contatto C1 il PLC mi darà a fine ciclo la bobina B1 come attiva.
+	Ragionamento sbagliato poichè non si ragiona su come funziona il ciclo PLC.
+	In realtà ciò che succede è che il PLC legge il primo segmento e, vedendo il contatto C1 chiuso, setta attiva la bobina B1. Al rung successivo, il PLC rileva il contatto C1 aperto e quindi disattiva la bobina B1. Con questa condizione, al termine del ciclo macchina, la bobina B1 risulterà sempre disattivata nonostante il programmatore abbia specificato di voler attivare la bobina in caso di C1 chiuso.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/LAD1}
+		\label{lad1}
+		\caption{Bobina attivata da due rami distinti}
+	\end{figure}
+
+	Per ovviare a questo problema in linea di massima si deve sempre evitare di attivare bobine da due segmenti distinti ed assicurarsi di attivarle sempre sullo stesso ramo di logica nel caso in esame mettendo i due contatti C1 e C2 in parallelo
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/LAD2}
+		\label{lad2}
+		\caption{ Soluzione con contatti C1 e C2 in parallelo sullo stesso ramo}
+	\end{figure}
+	
+	Un altra soluzione è quella di usare i comandi li Latch ed UnLatch. Naturalmente bisogna studiare bene i casi in cui Settare la bobina e ricordarsi sempre di considerare tutti i casi di Reset ove evitare inaspettate situazioni di stallo del processo. 
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{Immagini/LAD3}
+		\label{lad3}
+		\caption{ Soluzione usando Latch e UnLatch}
+	\end{figure}
+	
+	
+	Come qualunque linguaggio di programmazione anche in Ladder è possibile creare delle Funzioni (chiamate FC nel mondo Siemens). Queste così come in un linguaggio standard ammettono ingressi ed uscite e possono utilizzare variabili globali o di valenza locale (conosciute come variabili Temporanee) Anche in Ladder il buonuso delle funzioni è alla base di un software ben costruito, facilmente espandibile ma sopratutto leggibile non soltanto dallo sviluppatore. Per quanto rigarda le variabili, un software PLC richiede di ragionare a livello più basso rispetto ad un linguaggio standard. Le variabili in PLC sono del tipo Bit, Byte, Word, DWord. Naturalmente si posso utilizzare acronimi di alcuni tipi di dato quale Int, Real, Bool ma si tende sempre a ragionare con i tipi di dato Base. 
+	Una particolarità di Siemens è la possibilità di creare dei Database di dati oltre alle semplici variabili allocabili in modo standard. Questo aiuta molto la pulizia e organizzazione dei dati in quanto potrei creare per esempio un database contenente solamnte gli Allarmi Macchina, un altro contenente i dati di Gestione di qualche Motore, un altro database contenente le variabili di avvio del PLC. 
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/LAD4}
+	\label{lad4}
+	\caption{DB-ALLARMI}
+	\end{figure}
+
+	Introduciamo ora un altro elemento fondamentale alla programmazione in Ladder ovvero le Function Block (FB). Le FB sono delle particolari FC ma a differenza delle ultime, portano con se un Database di valori necessari al loro funzionamento. Un programmatore se ha bisogno di creare una funzione che possieda delle variabili Statiche che vengano automaticamente generate all'instanziazione, deve optare per una FB. Il linguaggio Ladder ha molte FB di sistema che si usano continuamente; gli stessi Timer TON e TOF sono delle FB di sistema. Il vantaggio delle FB è che sono dei blocchi di programma che possono essere riutilizzati da altri progetti, inoltre portadosi dietro la sua struttura dati, non necessita di ulteriori variabili oltre quelle del proprio database.
+
+
 \section{Best Practices}
-spiegazione delle best practice sul come strutturare un software PLC REMAPPING I/O, utilizzo di FB per dispositivi esterni (MOTORI MITSUBISHI - TELECAMERE DATALOGIC - ENCODER MACCHINA - STAMPANTE - NORMALIZZAZIONI) GSD
-\section{Comunicazione Con Dispositivi Macchina}
+Conclusa la configurazione del sistema e verificata la corretta comunicazione dei componenti si può procedere allo sviluppo del software e della logica del controllore seguendo le best practice.
+
+\subsection{I/O Mapping}Prima di iniziare a scrivere la logica del processo è buona usanza fare un mapping delle variabili di input ed output in variabili di memoria locale del PLC in modo da agire su di esse e non direttamente sulle variabili dei moduli. Per gli ingressi per esempio potrebbe capitare che un sensore con logica negativa NPN venga sostituita con una di logica positiva PNP il che provocherebbe il dover ricercare nell'intero progetto tutti gli usage di tale variabile ed invertirne la logica. Tramite un mapping della variabile modulo con una locale, basta invertire la logica nel mapping di tale variabile per risolvere il problema.
+
+Per quanto riguarda le variabili di output invece si immagini di spostare il comando di un azionamento da un uscita ad un altra perchè per qualche motivo quella vecchia va subito un guasto. Anche in questo caso, avendo un mapping con una variabile di memoria locale al PLC è sufficiente linkare la variabile ad una nuova uscita.
+Inoltre i comandi alle uscite del PLC molto spesso possono essere azionati da diverse logiche quindi avere una "Function" dove definire le varie abilitazione all'uscita è molto comoda sia per Debugging che per la pulizia del Codice.
+
+
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/OUT}
+	\label{IN}
+	\caption{Mapping di Ingressi}
+\end{figure}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/OUT}
+	\label{OUT}
+	\caption{Mapping di Uscite}
+\end{figure}
+
+
+
+\subsection{Function Blocks}
+L'utilizzo di FB nel proprio software è cruciale se si vuole sviluppare un programma PLC di qualità, modulare ma sopratutto in modo più rapido. Il vantaggio delle FB è che sono appunto riutilizzabili, vengono perfezionati con il tempo, ampliati di funzionalità ma sopratutto evita di dover reimplementare un elemento già progettato e callaudato. Nel caso della nostra etichettatrice, abbiamo ben due Azionamenti Mitsubishi ed altre due telecamere Datalogic per questo abbiamo ben deciso di costruirci una FB per gli Azionamenti ed una per le Telecamere così da poter usare il medesimo modulo per i dispositivi che sono univoci tra loro. Questo oltre ad essere un vantaggio per il progetto in esame, resta ancora più utile per lo sviluppo di futuri programmi che utilizzeranno gli stessi dispositivi.
+Oltre che per dispositivi, le FB possono essere utilizzate anche per semplici Utility quali la Normalizzazione delle uscite Analogiche
+
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/FB1}
+	\label{FB1}
+	\caption{Function Block Normalizzazione}
+\end{figure}
+
 
 \section{Camme Digitali e Sistemi di Controllo}
 Per spiegare cosè una Camma digitale conviene descrivere prima la classica camma meccanica. Sebbene le due hanno utilizzi diversi, alcuni principi rimangono gli stessi.
@@ -300,6 +638,7 @@ Con azionamento diretto si ha il contatto fisico tra la camma e la "Punteria" po
 	\centering
 	\includegraphics[width=12cm]{Immagini/camme}
 	\caption{ Foto di un albero a camme.}
+		\label{cam1}
 \end{figure}
 
 Più semplicemente la forma della camma rende possibile l'azionamento di una o più valvole in una determinata fase della rotazione dell'albero. 
@@ -308,27 +647,148 @@ Nel nostro caso non abbiamo camme meccaniche nè valvole ma ciò che ci interess
 
 Per Camma digitale si intende dunque l'istante di attivazione di una qualunque logica programmabile. Le camme digitali vengono impostate, come anche per una camma meccanica, su un giro del motore principale.
 Nel caso dell'etichettarice, ogni giro completo del motore principale corrisponde alla rotazione della stella di un unico passo (ad ogni passo di stella viene agganciato un flacone nuovo)
-Possiamo perciò rappresentare un giro completo del motore principale come una "finestra" di passaggio prodotto. \textcolor{red}{IMMAGINI PER FORZA}
+Possiamo perciò rappresentare un giro completo del motore principale come una "finestra" di passaggio prodotto.
+
+ \textcolor{red}{IMMAGINI PER FORZA}
 
 Per poter impostare le varie camme necessarie alla macchina necessitiamo dei gradi macchina istantanei. I gradi macchina si possono leggere mediante l'utilizzo di appositi encoder analogici, digitali oppure integrati nel motore stesso.
 Una volta disponbile la lettura istantanea dei gradi macchina si possono impostare le camme digitali definendo i gradi macchina di attivazione e disattivazione. 
 
 Un esempio semplice è quello di definire la camma di controllo presenza prodotto. Vogliamo infatti che questo controllo avvenga precisamente quando il flacone è difronte al sensore in modo da minimizzare errori di rilevamento.
 Ipotizziamo ora che la posizione ottimale del flacone corrisponde a 30 gradi macchina istantanei. 
+
 \textcolor{red}{IMMAGINI FLACONE SENSORE INGRESSO}
 
 Possiamo creare una camma che si attiva a 20 gradi e di disattiva a 40 gradi all'interno della quale rimanere "in ascolto" del segnale del sensore per definire se il prodotto è presente o meno.
 
-Dettagli approfonditi sull'applicazione ed implementazione delle camme digitali verranno descritti nel prossimo capitolo insieme al metodo di controllo mediante Shift Register. 
+Per le Camme è stata creata una FB che semplifica la loro gestione e mette a disposizione attraverso il suo database una interfaccia. Tale database è strutturato come in figura
 
-\textcolor{red}{DESCRIZIONE DI TUTTE LE CAMME DELLA MACCHINA}
+Ogni Camma ha 4 variabili che ne permettono l'impostazione e la lettura dello stato:
+\begin{itemize}
+	\item INIZIO (Real): Valore Impostabile da Programma. Sono i Gradi Encoder nel quale vogliamo che la camma risulti attiva
+	\item FINE (Real): Valore Impostabile da Programma. Sono i Gradi Encoder nel quale vogliamo che la camma di disattiva
+	\item ATTIVA (Bool): Variabile di Sola Lettura. Questa variabile viene settata a TRUE quando i gradi Encoder letti in tempo reale sono compresi tra i valori impostati su INIZIO e FINE
+	\item INCLUSA (Bool): Valore Impostabile da Programma. Variabile che permette di Includere o Escludere la Camma dal Programma. Se per qualche motivo l'operatore voglia disabilitare una camma (Per esempio l'operatore macchina non vuole che venga effettuato il Controllo OCR dalla Telecamera basta disablitare la relativa Camma)
+\end{itemize}
 
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/CAM1}
+	\caption{ DB-CAMME MACCHINA}
+	\label{CAMME4}
+\end{figure}
 
 
 \section{Controllo Mediante Shift Register}
+In un macchinario automatico che richiede come specifica il controllo della qualità e l'idoneità dei pezzi prodotti, è necessario naturalmente tenere traccia della posizione di ogni singolo pezzo presente sulla linea per poi determinarne lo stato (presente, buono, scarto). Questa procedura riulterebbe molto semplice se il macchinario fosse programmato a Fasi. Per programmazione a Fasi intendiamo una macchina che processa un solo pezzo alla volta seguendo varie Fasi sequenziali. Questo metodo oltre a rendere la macchina molto più lenta, non sempre adottabile. L'etichettatrice in questione difatti non contiene Fasi bensì è una macchina a ciclo continuo. Questo lo rende molto più veloce ma anche più complesso. Tenere traccia dello stato dei pezzi è un impresa più ardua. Per questo interviene lo Shift-Register.
+Lo Shift-Register in questione è una astrazione a più alto livello di quello conosciuto in Elettronica Digitale ma similare nel funzionamento.
+
+Lo Shift-Register viene inteso in questo caso come un blocco di memoria di tipo Byte o Superiore che in uno specifico istante esegue uno shift di N posizioni di tutti i bit verso una specifica direzione.
+
+Consideriamo ad esempio la Word (16 Bit) in figura \ref{sh1}. Il blocco in alto risulta la Word originaria mentre il blocco in basso corrisponde allo shift di tale Word verso sinistra di 6 posizioni (Supponendo di aver Forzato il valore 0 in ingresso)
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH1}
+	\caption{ FOTO TIA POTRAL SHIFT HELP}
+	\label{sh1}
+\end{figure}
+
+Ora non ci resta che creare gli Shift-Register necessari alla macchina. Solitamente se ne crea uno per ogni controllo sulla macchina. Nel nostro caso avremo i seguenti Shift Register:
+\begin{itemize}
+	\item Shift Presenza Prodotto
+	\item Shift Buono Scarto
+	\item Shift Controllo Allineamento
+	\item Shift Controllo OCR
+	\item Shift Controllo PharmaCode
+\end{itemize}
+
+I primi tre Shift sono associati alla posizione e stato dei flaconi all'interno della macchina mentre gli ultimi 2 sono relativi alla etichettatrice ed alla posizione e stato delle etichette
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH8}
+	\caption{ Database contenente o Shift-Register}
+	\label{sh8}
+\end{figure}
+
+
+Analizziamo per semplicità solamente il primo relativo alla Presenza Prodotto così da poter effettuare il primo controllo macchina. Bisogna innanzitutto associare virtualmente ad ogni bit dello Shift una posizione sulla macchina \ref{sh2} Si può notare come le posizioni utili per lo Shift-Register principale sono 12 perciò non è sufficiente un Byte (8 bit) ma abbiamo bisogno di una Word (16 bit) per riuscire a gestire tutte le posizioni
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH2}
+	\caption{ SHIFT REGISTER MCCHINA FOTO}
+	\label{sh2}
+\end{figure}
+
+Ora non ci resta che far scorrere lo shift nella stessa direzione del flusso della macchina ogni qualvolta essa si sposta di una posizione Flacone. Il comando ad eseguire lo Shift deve avvenire in un preciso istante del giro della macchina pertanto utilizziamo le nostre Camme Digitali. Associamo dunque al nostro programma le prime due Camme necesarie:
+
+\begin{itemize}
+	\item "Camma di Attivazione SR Presenza Flacone": Determina l'istante in cui deve avvenire lo Shift del Registro "Presenza Prodotto". Solitamente la sua attivazione è prossima allo Zero Encoder poichè deve essere la prima cosa ad eseguita ad ogni giro macchina prima di qualunque controllo.
+	\item "Camma di Controllo Presenza Flacone": Rappresenta l'istante in cui bisogna andare a leggere il segnale della Fotocellula di ingresso per determinare se il Flacone è presente o meno.
+\end{itemize}
+
+Mettiamo ora insieme Camme e Shift-Register per creare il nostro primo Controllo Base. Notiamo nella figura \ref{sh3} come il rung venga abilitato soltanto nell'istante in cui la nostra "CAMMA1"(Camma di Attivazione SR) risulta attiva, a significare che la macchina si trova in una posizione corretta per eseguire tutto ciò che ne segue sul segmento. Ciò che ne risulta è lo Shift di una posizione verso sinistra del registro "Shift Presenza Prodotto" (tenendo presente che la LSB si trova sulla Destra)
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH3}
+	\caption{ Segmento Ciclo Auomatico attivazione SHL}
+	\label{sh3}
+\end{figure}
+
+Il prossimo segmento \ref{sh4} illustra invece l'istante di verifica presenza prodotto. Ciò che avviene è abbastanza semplice; prima viene verificato se la CAMMA2 (Camma di Controllo Presenza Flacone) risulta attiva e quindi il Flacone si troverebbe in una posizione corretta per il rilevamento del sensore; una volta attiva la Camma2 si va a leggere il valore della fotocellula di presenza prodotto e se essa risulta impegnata da un flacone allora si va a settare sullo "Shift Presenza Prodotto" il Bit corrispondnte. Il Bit da settare è riferito alle posizioni virtuali assegnate allo shift precedentemente. Il sensore di presenza prodotto che rileva il flacone si trova nella prima posizione macchina al quale abbiamo assegnato il primo Bit dello Shift ovvero il Bit 0. 
+
+Fatto ciò, per ogni giro macchina verrà eseguito lo spostamento dello "Shift  Presenza Flacone" e subito dopo il controllo Presenza Flacone con relativo aggiornamento del Bit sullo Shift.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH4}
+	\caption{ Segmento Ciclo Auomatico presenza prodotto}
+	\label{sh4}
+\end{figure}
+
+Avere lo stato di presenza di un flacone all'interno della macchina è indispensabile per evitare che vengano eseguiti controlli inutili o azionare dispositivi ove non necessario. Nel nostro caso risulterebbe molto dannoso al processo se l'etichettatrice applicasse un etichetta li dove non ci fosse un flacone. L'etichetta verrebbe rilasciata sulla stella e potrebbe causare vari problemi. Con lo Shift-Presenza-Flacone questo problema si evita andando a verificare lo stato del Bit prossimo alla pinna di etichettatura prima di inviare il Trigger all'unità di etichettaggio. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH5}
+	\caption{Trigger etichettatura ciclo automatico}
+	\label{sh5}
+\end{figure}
+
+Nella figura \ref{sh5} si evince come il Trigger di Etichettatura avviene all'interno nella relativa CAMMA3 e solo se nella posizione 4 dello "Shift Presenza Flacone" il Bit è settato a True.
+
+Per quanto riguarda gli Shift-Register relativi all'etichettatrice, esse non dipendono dalla posizione della macchina. Questi Shift-Register servono per determinare l'idoneità dell'etichetta sulla base di controlli OCV e PharmaCode.
+Questi due Shift-Register hanno orientamento opposto a quelli relativi alla macchina ed hanno il primo Bit in corrispondenza dell'ultima etichetta ovvero quella sulla "pinna" inoltre lo Shift di questi registri avviene ogni qualvolta viene inviato il Trigger al gruppo di etichettaggio e di conseguenza il rullo delle etichette avanza di un passo. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH6}
+	\caption{IMMAGINE DI TUTTI GLI SHIFT REALI}
+	\label{sh6}
+\end{figure}
+
+
+La gestione di tutto il processo di controllo delle etichette avviene tramite un gioco di Attesa ed Invio di conensi tra Etichettatrice, Stampante e Telecamera. In pratica ciò che succede è riportato di seguito:
+\begin{itemize}
+	\item Raggiunta la CAMMA3 di "Trigger Etichetta" viene applicata un etichetta sul flacone
+	\item I due "Shift Controllo OCR" e "Shift Controllo PharmaCode" vengono shiftati di una posizione verso destra (ricordiamo che lavorano in verso opposto a quelle della macchina)
+	\item Non appena viene ricevuto il consenso che l'etichetta è stata espulsa e lo Shift è avanzato, si invia un comando di Trigger alla Stampante ed un Trigger alla Telecamera
+	\item La Telecamera elabora il suo programma interno e restituisce sulle sue uscite digitali l'esito del controllo
+	\item Se il risultato del controllo è positivo, si setta il Bit dello Shift associato all'etichetta appena controllata a True
+	\item Raggiunta nuovamente la CAMMA3 viene applicata l'etichetta sul Flacone e viene Fatto un operazione di AND logico tra i Bit in posizione prossimi alla Pinna degli Shift-Register "Presenza Prodotto" - "Controllo Ocr" - "Controllo PharmaCode" ed il risultato di tale operazione copiata sul Bit dello Shift "Buono-Scarto"
+	\item Sarà infine la terza ed ultima stella del macchinario, in base al valore letto su tale Shift, a decidere se scartare o meno il Flacone. 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{Immagini/SH7}
+	\caption{IMMAGINE SPIEGAZIONE AND BIT A BIT}
+	\label{sh7}
+\end{figure}
 
 
 \chapter{Protocolli di comunicazione}
@@ -413,7 +873,7 @@ In figura \ref{OPC} è possibile osservare le percentuali dei campi di utilizzo 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=13cm]{Immagini/OPC}
-	\label{1}
+	\label{opc}
 	\caption{Campi di utilizzo OPC.}
 \end{figure}
 \subsection{Unified Architecture}
@@ -440,12 +900,290 @@ Registro di comunicazione e FB di controllo
 Registro di comunicazione e FC di controllo
 \section{TCP Stampante VideoJet}
 
+\chapter{Sviluppo Sistema di Visione}
+Abbiamo parlato finora di come sviluppare il software PLC che controlla la nostra etichettatrice, coe gestire i vari controlli mediante l'utilizzo di camme e di shift Register ma non è stto ancora mensionato come questi controlli vengono realmente effettuati. In questo capitolo andiamo a scoprire cosa accade dietro il "Trigger Telecamere" continumente citato in precedenza.
+Abbiamo già detto che questo specifico Trigger viene inviato ogni volta che  l'etichettatrice avanza di un passo. A seguito dell'invio di questo trigger la Telecamera esegue il suo programma di Visione, ne elabora il risultato ed in caso di risultato positivo attiva la sua uscita digitale inviando un segnale al PLC. Questo segnale rappresenta l'idoneità dell'etichetta appena controllata.
+
+\subsection{Datalogic Impact Sofwtare Suite}
+Dataglogic mette a disposizione degli svilupatori una Suite di applicazioni proprietarie per la reazione dei programmi di visione. I tool principali di questa Suite sono:
+
+\begin{itemize}
+	\item \textit{VPM}: è il programma principale per poter configurare la camera. Permette, prima
+	di tutto, di settare i parametri principali (apertura shutter, trigger, illuminatori,
+	calibrazione...) per un corretto funzionamento a seconda delle condizioni operative
+	dell’utente. In secondo luogo, `e necessario per poter creare il task di ispezione
+	desiderato. Creando un file di ispezione si avr`a la possibilit`a di utilizzare i diversi
+	tool presenti. I tool vanno dal semplice Blob detection al pi`u complicato Pin Point
+	Tool. Combinando tutti questi tool l’utente potr`a individuare in modo univoco un
+	particolare oggetto che verr`a acquisito dalla camera e volendo, fornire le coordinate
+	di esso ad un altro dispositivo. Il file di ispezione che si viene a creare viene
+	chiamato vision program (.vp).
+	\item \textit{CPM}: questo programma invece serve per creare l’interfaccia utente in maniera da
+	essere utilizzata in real time mentre all’interno della camera il file di ispezione, precedentemente
+	configurato, esegue le sue operazioni. Permette quindi, ad esempio,
+	di vedere a video i risultati dell’ispezione e di modificare alcune configurazioni in
+	maniera rapida. Infatti rispetto ai complessi linguaggi di programmazione, CPM
+	offre la massima flessibilit`a e consente di creare pannelli di controllo in tempi decisamente
+	inferiori a quelli normalmente richiesti. Rappresenta la vera e propria
+	HMI (Human Machine Interface) della camera.
+	\item \textit{IMPACT SDK}:quest ultimo non è un vero e proprio software. E’ una libreria scritta in C\# che integrata ad un progetto di Visual Studio permette di utilizzare delle classi e metodi per interagire con la camera. Attraverso queste APIs (Application Program Interface) l’utente può sviluppare la proprio HMI perfettamente. Quindi il CPM e la libreria SDK vengono utilizzate per lo
+	stesso fine anche se quest’ultima richiede una maggiore abilità di programmazione (conoscenza del C \#) ma permette una maggiore flessibilità. Tramite i metodi è possibile infatti poter richiamare qualunque tool della camera già utilizzato nel VPM. Le principali APIs di cui si pu`o usufruire sono:
+	– Connessione/disconnessione ad un Vision Device.
+	– Caricare programmi di ispezione.
+	– Caricare o scaricare immagini dal/verso il pc.
+	– Ricavare dati dall’immagine.
+	– Calibrare la camera.
+	– Scattare fotografie.
+\end{itemize}
+
+\subsection{Datalogic VPM}
+Il Vision Program Manager di Datalogic è il tool per eccellenza che permette di sviluppare il programma e la logica di controllo delle immagini catturate dalla telecamera. I tool che Datlogic mette a disposizione sono suddivise in Macro-Categorie:
+\begin{itemize}
+\item Manipolazione Immagine: Questi tool permettono la anipolazione dell'immagine rilevata dalla telecamere mediante l'applicazione di specifici filtri e distorsioni. Questi tool servono a preparare l'immagine per la vera e propria elaborazione. Per esempio spesso si potrebbe voler eseguire l'elaborazione su una immagine in Bianco e Nero con elevato Contrasto pertanto filtrare l'immagine per renderla più idonea ai Task che verranno eseguiti. 
+	\item Localizzazione : Sono quei tool necessari a Localizzare parti  dell'immagine di interesse. Uno Spigolo, un cerchio, o semplicemente una feature dell'immagine sulla quale era stato effettuato un Train mediante il tool "PinPointPatternFinder". La localizzazione di feature serve spesso come sistema di riferimento per controlli successivi. Immaginiamo di voler verificare tutte le monete di un certo tipo; non possiamo semplicemente utilizzare un tool di Ispezione che confronti l'immagine con un altra sulla quale era stato fatto il Train. Questo perchè la moneta potrebbe non trovarsi sempre nella stessa posizione e pertanto un lieve spostamento della moneta risulterebbe in un test fallito.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS1}
+		\label{vis1}
+		\caption{Immagini di Monete catturate nella medesima applicazione}
+	\end{figure}
+
+	Per ovviare a questo tipo di problema molto solito, si usa prima un Locatore che per rilevare un oggetto più generico e successivamente sul riferimento assoluto di quell'oggetto si possono eseguire elaborazioni con tool più specifici. Nell'esempio in questione conviene prima localizzare un elemento di forma circolare; avendo a tal punto un riferimento alla sua origine, possiamo eseguire il controllo limitandoci a solo ciò che si trova al suo interno utilizzando la localizzazione di un Trained Model (ovvero il confronto di una feature con quella di un campione salvato). Il salvataggio del campione viene chiama appunto "Train" e deve essere rieseguito ogni volta che viene cambiato il modello di riferimento che si desidera ricercare/confrontare
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS3}
+		\label{vis3}
+		\caption{Locatore di un trained Model (ROI regione circolare gialla)}
+	\end{figure}
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS2}
+		\label{vis2}
+		\caption{Locatore di trained Model. Notare il "Tool Origin" riferito al centro del Locatore Circolare }
+	\end{figure}
+
+
+	
+	\item Ispezione: Sono tool che servono appunto per l'ispezione di determinati feature quali Misurazioni, Rilevamento di Difetti, Letture OCR e Data Matrix. Quasi tutti i tool di Ispezione e Localizzazione richiedono che si specifichino delle cosiddette ROI (Region of Interest). Nel caso dei tool di localizzazione e ispezionesi richiede sia specificata l'area di ricerca dei cosidetti Feature ed in caso di Localizzazione di Trained Features viene richiesta anche l'area della regione ove eseguire il Train del Modello. 
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS5}
+		\label{vis5}
+		\caption{Region of Interest per un controllo OCR (Area di Tratteggio Arancione)}
+	\end{figure}
+	
+	
+	\item Logici: I tool logici invece servono per elaborare manualmente i Dati o i risultati ottenuti dai controlli precedenti. Mediante questi si possono controllare per esempio le uscite Digitali e Profinet della telecamera. Si possono inoltre creare Branch, Ciclo, Break, Switch Case ed in essi utilizzare operatori logici quali AND-OR (Supponiamo di volere uscita telecamera positiva solamente se 2 controlli sono soddisfatti). Oltre a tali costrutti ed ai più semplici operatori Logici esistono anche tool che permettono di scrivere interi script in linguaggio BASIC lasciando estrema liberta allo sviluppatore
+	
+			\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS4}
+		\label{vis4}
+		\caption{Controllo dell'uscita discreta della telecamera}
+	\end{figure}
+
+\end{itemize}
+
+AL termine dello sviluppo del programma di visione essa potrà essere salvata all'interno della telecamera così che venga avviato automaticamente all'accensione e della messa online della stessa. Su una telecamera possono essere salvati più di un programma di visione e la commutazione tra i vari programmi può avvenire mediante speifici comandi Profinet, via TCP ed altri protocolli compatibili oppure creando dei particolari task scritti in linguaggio BASIC che ricevendo segnali sugli ingressi digitali si occupano di elaborare tale richiesta.
+
+\subsection{Datalogic CPM}
+
+Il Datalogic CPM (Control Panel Manager) consente di creare panelli operatore con il quale l'utente utilizzatore del nostro software può interagire. Questo serve sia per evitare che l'utente possa modificare la logica funzionale del programma di visione, sia per dargli un interfaccia restrittiva di solo quello che sarà di sua competenza. Il CPM permette di creare l'interfaccia operatore tramite un software grafico. Mette a disposizione oggetti grafici quali Text-Box, Botton, I/O Display Box ed altri oggetti quali finestre ove visualizzare l'immagine catturata dalla telecamera e modificare le ROI e SEARCH AREA dei vari controlli.
+
+			\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{Immagini/VIS6}
+	\label{vis6}
+	\caption{Esempio di Applicazione CPM}
+\end{figure}
+
+Concluso lo sviluppo dell'applicazione CPM per eseguirlo basta creare uno script in Visual Basic o un semplice batch script di windows per eseguire il CPM Runtime passandogli come parametro il file di progetto CPM appena creato
+
+\subsection{Programma di Visione LabelTech}
+Andiamo ad Aanalizzare ora il programma di visione sviluppato per la nostra Labeltech. Prendiamo in considerazione soltanto la telecamera di controllo etichette e lo sviluppo del suo programma. Lo scopo è quello di verificare che il Pharmacode (Codice a barre specifico nel Pharmaceutico) ed i dati stampati dalla Stampante Videojet siano corretti e non contengano errori di stampa. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{Immagini/VIS7}
+	\label{vis7}
+	\caption{Immagine Dell'etichetta catturata da Telecamera}
+\end{figure}
+
+Vediamo nel dettaglio il programma di visione sviluppato analizzando uno alla volta i vari controlli che dovranno essere fatti sull'etichetta:
+
+\begin{itemize}
+	\item \textit{Controllo Pharmacode Data Matrix}: Il primo controllo ad essere eseguito è la ricerca e verifica della correttezza del PharmaCode. Questa verifica deve controllare sia la correttezza in termini di legibilità ed integrità del Pharmacode ma anche la correttezza del codice stesso. Il valore del codice letto infatti deve corrispondere al valore Pharmacode identificativo del Lotto in produzione.
+	
+
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS8}
+		\caption{Controllo PharmaCode}
+		\label{vis8}
+	\end{figure}
+
+	Come si può vedere nella figura \ref{vis8} esiste uno specifico tool per la lettura di codici a barre sia 2D che 3D. Questo tool necessita semplicemente che gli sia specificata uno ROI nella quale andare a ricercare il codice. Penserà esso a ritrovare un codice valido in quell'area e determinarne il valore. Il Pass-Fail di questo tool dipende dal fatto che venga rilevato o meno un codice a barre nell'area della ROI e che il valore di tale codice corrisponda ad un valore impostato o rilevato precedentemente da Training.  
+	
+	\item \textit{Controllo OCR Codice Lotto}: Il secondo controllo si occupa di determinare la corretta stampa del codice lotto da parte della stampante ed anche della verifica che tale codice corrisponda effettivamente al valore Codice Lotto in produzione. Il controllo OCR nella visione è uno dei controlli che richiedono maggiore tempo di calcolo pertanto impostare un ROI di ricerca troppo ampia potrebbe compromettere notevolmente le prestazioni. Inoltre le stampe effettuate dalla stampante potrebbero risultare leggermente spostate da un etichetta all'altra per questo motivo come spiegato precedentemente è preferibile in questi casi utilizzare un locatore.
+	Come locatore per questo specifico caso abbiamo deciso di utilizzare l'inizio della stampa stessa. 
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS9}
+		\caption{Locatore Per Controllo OCR}
+		\label{vis9}
+	\end{figure}
+
+In questo modo abbiamo potuto ridurre al minimo l'area della ricerca del codice OCR poichè tale ROI rimarrà sempre agganciato al punto relativo al locatore.
+Sulla base della posizione del locatore, mediante il Tool di rilevamento OCR determiniamo la ROI di ricerca e rilevamento caratteri. Ogni volta che cambiano i caratteri da ricercare bisognerà effettuare un nuovo train dei caratteri. Il train si effettua specificando l'area da leggere e specificando in una textbox i caratteri che si stanno leggendo. Il software della datalogic autoapprenderà il nuovo codice salvando le immagini dei singoli caratteri catturati in una libreria interna. Tale libreria verrà utilizzata come campione di confronto per rendere più veloce ed efficiente le future analisi. 
+
+		\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{Immagini/VIS10}
+	\caption{Controllo OCR Codice Lotto}
+	\label{vis10}
+\end{figure}
+
+Il Pass-Fail di questo tool verrà deciso anch'esso dall'idoneità e qualità dei caratteri stampati e dalla verifica con una stringa di riferimento alla quale deve corrispondere. Tutte le impostazioni dalla grandezza e posizione delle ROI, alla procedura di Train e l'impostazione della stringa di confronto, potranno essere gestite all'interno del CPM che verrà sviluppato per l'operatore della macchina. 
+	
+	
+	\item \textit{Controllo OCR Codice Scadenza Lotto}: Il terzo ed ultimo controllo di questa telecamera si occupa di determinare la corretta stampa della scadenza e della verifica che essa corrisponda al reale valore di Scadenza del Lotto in produzione. La procedura per eseguire questo controllo è la medesima applicata per il controllo del Codice Lotto tantè che utilizzano il medesimo Locatore poichè si presuppone che la stampa dei valori da parte stampante sia sempre e cmq allineata e se dovesse risultare leggermente spostata l'una lo risulterebbe anche l'altra. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS11}
+		\caption{Controllo OCR Scadenza Lotto}
+		\label{vis11}
+	\end{figure}
+	
+	Pertanto il Pass-Fail di questo tool anche dipenderà dall'idoneità e qualità della stampa e dalla verifica del valore rilevato dall'OCR con uno di riferimento.
+
+\end{itemize}
+
+Una volta configurati i vari Controlli che al termine di ogni trigger elaboreranno i relativi risultati, dobbiamo definire le logiche generali di Pass-Fail il quale risultato dovrà essere inviato al PLC.
+Per fare ciò Datalogic ci mette a disposizione dei tool molto pratici:
+
+\begin{itemize}
+	\item \textit{Pass-Fail Branch}: Si tratta di un costrutto di Branch (If-Else) che permette di creare una condizione di Pass o Fail basata sul risultato di uno o più controlli.
+	
+			\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{Immagini/VIS12}
+		\caption{Pass-Fail Branch}
+		\label{vis12}
+			\end{figure}
+		
+		Nella figura \ref{vis11} possiamo vederne il funzionamento. Una volta importato il tool, essa ci mette a disposizione 2 Branch una di PASS ed una di FAIL. Per configurare questo tool è sufficiente definire quale sia la condizione di ingresso nel segmento di PASS. Per definire tale condizione, viene messo a disposizione un box contenente tutte le uscite dei risultati dei tool utilizzati nel programma di visione. Basta a questo punto spuntare i tool che devono essere soddisfatti affinchè sia "attivato" il segmento di PASS.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=13cm]{Immagini/VIS13}
+			\caption{Discrete Output}
+			\label{vis13}
+		\end{figure}
+	
+		Ora non resta che inviare tale risultato al PLC. Nel segmento di Pass perciò utilizziamo il tool "Discete Output" che ci da un interfaccia per poter scrivere sulle uscite digitali. Mediante questo tool configuriamo l'uscita digitale numero 1 come un impulso digitale. In questo modo, ogni volta che il programma entrerà in quello specifico segmento di PASS, verrà inviato un comando al PLC a comunicare che il controllo ha avuto un esito positivo.
+		
+		 
+\end{itemize}
+
+\subsection{Control Panel Manager LabelTech}
+Concluso lo sviluppo del VP (Vision Program) è necessario creare un interfaccia utente che consenta all'operatore di visualizzare in tempo reale l'andamento del controllo, verificare e modificare eventuali ROI dei var controlli, definire i valori di riferimento per le verifiche OCR e PharmaCode e creare diverse configurazioni di questi valori per i diversi formati di prodotti che dovranno essere analizzati. Ogni formato di etichetta diversa infatti avrà una propria confugrazione del Programma di Visione che potrà essere salvato modificato e caricato sulla telecamera in caso di un cambio formato. Di seguito alcuni Screen Shot del CPM sviluppato
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{Immagini/VIS14}
+	\caption{Interfaccia Operatore Controllo PharmaCode}
+	\label{vis14}
+\end{figure}
+
+Nella figura \ref{vis14} è rappresentata l'interfaccia CPM per controllo Parmacode. Essa mette a disposizione semplicemente un pulsante di Train del Pharmacode da verificare e cattura automaticamente il valore che verrà utilizzato come campione di riferimento per le successive verifiche. E' anche possibile spostare l'area di ricerca ROI
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{Immagini/VIS15}
+	\caption{Interfaccia Impostazione Locatore OCR}
+	\label{vis15}
+\end{figure}
+
+Nella figura \ref{vis15} è rappresentata l'interfaccia operatore per l'impostazione del Locatore OCR. Essa permette all'operatore di definire la feature da utilizzare come Locatore di posizionamento facendo il Training di una determinata feature dell'immagine e impostando poi un area ove effetuarne la ricerca. Sul CPM è stato previsto inoltre uno slider per impostare la "Percentuale di accuratezza minima" affinchè il controllo risulti idoneo. Naturalmente al momento del train l'immagine rilevata avrà una accuratezza del 100\% con il campione appena catturato.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{Immagini/VIS16}
+	\caption{Interfaccia Controllo OCR Scadenza Lotto}
+	\label{vis16}
+\end{figure}
+
+Nella figura \ref{vis14} è rappresentata l'interfaccia CPM per controllo OCR del Codice Lotto. Questa interfaccia è leggermente più complessa rispetto alle altre poichè necessita della configurazione di diversi parametri. Tra questi parametri vi sono:
+\begin{itemize}
+	\item 
+\end{itemize}
+
 \chapter{HMI/SCADA}
 Un HMI, o interfaccia uomo-macchina, è un dispositivo o un software che permette al suo utilizzatore di comunicare con un macchinario o un impianto di produzione. Come? Traducendo una quantità immensa di dati complessi in informazioni accessibili all’uomo. In questo modo l’operatore ha a sua disposizione tutti gli strumenti necessari per controllare il processo di produzione.
 Contestualizzando questa definizione nel mondo dell’Automazione Industriale, risulta dunque evidente che più intuitivo e user-friendly è l’HMI, più efficiente e redditizio risulta il lavoro.
 
 Sostanzialmente un dispositivo HMI rende possibile la visualizzazione e il controllo delle applicazioni. Sfruttando risorse come I/O, SoftPlc CoDeSys o Ethercat e sistemi operativi (ancora meglio se embedded), permette di comunicare con qualsiasi sistema aziendale.
 
+Un sistema di supervisione viene generalmente impiegato per controllare una realta complessa, dove l’acquisizione di una grande quantità di dati in tempo reale, la sua elaborazione ,interpretazione e presentazione sono essenziali per il funzionamento di impianto , dal momento che le decisioni riguardanti la conduzione vengono prese proprio in base a tali dati, la loro raccolta non puo essere effettuata manualmente. Sostanzialmente i sistemi di supervisione si dividono in due categorie che sono le seguenti:
+a) Sistemi HMI (Human Machine Interface)
+b) Sistemi SCADA (Supervisory Control And Data Acquisition)
+I sistemi HMI sono generalmente impiegati a bordo macchina , cioe nelle immediate vicinanze della macchina che si vuole controllare . I sistemi SCADA sono ache essi fondamentalmente degli HMI e per molti aspetti più evoluti rispetto agli HMI standard.La differenza piu grande rispetto agli HMI consiste ne fatto che i sistemi SCADA possono memorizzare i valori di processo rilevati anche per lunghi periodi di tempo .Questi sistemi hanno una sorta di database per la memorizzazione di tali dati. Tutti i sistemi SCADA vengono integrati o appoggiati su sistemi di database. Solitamente i database sono software commerciali sviluppati da terzi, come esempio Microsoft SQL, Oracle,DB2... ect. Oltre ai DB commerciali vengono impiegati anche DB open source come PostgreSQL , MYSQL... ect. Un altra differenza tra SCADA e gli HMI standard risiede nel fatto che sistemi SCADA non vengono impiegati a bordo macchina. Questi sistemi effettuano un controllo da postazioni remote via rete ,per questo motivi vengono anche chiamati sistemi di supervisine e raccolta dati. In seguito verranno illustrati i componenti che costituiscono un sistema di supervisione come avviene la comunicazione tra essi , il processo di sviluppo e quali requisiti devono essere soddisfatti. 
+
+
+\subsection{Tipologie di HMI}
+In un sistema di supervisione e importante il modo in cui avviene l’interazione uomo-macchina. I dispositivi HMI stanno assumendo un ruolo sempre piu decisivo nelle applicazioni di automazione sia industriale che civile, infatti la possibilita di visualizzare in tempo reale messaggi diagnostici , allarmi o istruzioni per l’operatore e al contempo modificare i parametri operativi i modo semplice e diretto e diventata un’esigenza essenziale nella maggiorparte delle applicazioni. Nel caso dell’attivita di controllo di un impianto di produzione l’utente dovrà essere in grado di visualizzare lo stato degli elementi che compongono questo impianto ad esempio sonde di temperatura, di umidita ,posizionamenti di parti mobili del impianto ecc ,inoltre l’utente dovra essere in grado di impartire comandi al impianto ed effettuare regolazioni. L’interazione uomo-macchina avviene attraverso la riproduzione di tutti i pannelli di controllo dei regolatori di temperatura, allarmi, ed altri attuatori . E il supervisore a farsi carico del controllo del regolare funzionamento degli apparati , della segnalazione di anomalie e dell’esecuzione o suggerimento di azioni correttive. Si avverte sempre piu l’esigenza di visualizzare, controllare e interagire con i sistemi da postazioni remote.La tendenza del mercato HMI riflette le linee di evoluzione introdotte dal fenomeno della convergenza digitale : le applicazioni e i dispositivi si sono fatti sempre piu flessibili e potenti,consentendo remotizzazione ,multicanalit a, mobilita,personalizzazione e adattamento a diversi tipologie di rete, mentre le interfacce utente e le architetture applicative si sono uniformante ad alcuni tra i principali standard tecnologici emersi sul mercato, architetture basate su indirizzamento IP,ISO/OSI,architetture a 3 livelli ecc. Sostanzialmente oggi sul mercato esistono diverse tipologie di HMI, che vanno da semplici display con linee di testo nei quali si possono visualizzare informazioni testuali, a display grafici nei quali assieme al testo sono presenti anche informazione grafiche. Alcuni di questi sistemi integrano le funzionalita dei PC desktop e vengono chiamati panel PC ,sostanzialmente e un sistemi di calcolo integrato in un display grafico dota to di sistema operativo ,generalmente Microsoft Windows ,Windows CE.
+Questi sistemi possiedono tutte le funzionalita sia grafiche che di comunicazione dei PC.Tuttavia una limitazione di questi dispositivi e data dalla dimensione dello schermo che nei modelli più economici e ridotta di conseguenza si ha una limitazione nelle applicazioni grafiche.
+
+\textcolor{red}foto dei vari tipi di HMI testuale shermo Siemens e HMI MICROSOFT
+
+\subsection{Progettazione di un Interfaccia}
+Con l’avvento dei servizi web come punti centrali per la condivisione di informazioni e di dati, gli utenti hanno sentito la necessita di accedere e gestire le informazioni di lavoro, personali, da qualsiasi luogo in qualsiasi momento e con qualsiasi dispositivo (computer, palmare, cellulare, televisione ecc), di conseguenza la progettazione di applicazioni per dispositivi si e considerevolmente evoluta. Quando si progetta l’interfaccia di una applicazione e necessario considerare  molti elementi relativi al dispositivo di destinazione , come la risoluzione , la dimensione e gli angoli di visualizzazione dello schermo ,i colori , i caratteri , in quanto le applicazioni vengono visualizzate diversamente a seconda del dispositivo. L’obiettivo consiste nello sviluppare applicazioni piu rapide, produttive semplici ed esteticamente gradevoli e di facile comprensione ed utilizzo da parte del utente finale. I principali vincoli di progettazione di una interfaccia utente che bisogna osservare sono i seguenti:
+Dimensioni: La maggior parte dei dispositivi ha dimensioni molto ridotte rispetto a quelle PC desktop, questo comporta delle limitazioni per alcune applicazioni.
+La visualizzazione: Mentre la risoluzione dei monitor tradizionali dei PC desktop e di almeno 800x600 pixel , per i dispositivi HMI l’interfaccia grafica (ad esempio per un panello operatore con touch screen di 12) dispone di una risoluzione inferiore. Anche la scala di grigio e il numero di colori sono limitati per alcuni di questi dispositivi. Questi sono fattori da tenere presente quando si progetta un interfaccia grafica.
+I colori: Utilizzare dei colori espressivi che esprimono in modo chiaro lo stato di funzionamento di un componente del impianto. Convenzionalmente il colore rosso e associato ad uno stato di pericolo di conseguenza vine utilizzato per segnalare lo stato allarme, malfunzionamento,del componete.Il colore verde vienestazioni dette server di backup fig:3.6, che intervengono automaticamente in sostituzione delle stazioni principali in caso di guasto. Inoltre essendo lo scada un software commerciale, viene commercializzato in due versioni che sono: versione runtime, che si occupa di eseguire un applicativo gia sviluppata, e la versione di sviluppo che mette a disposizione del progettista tutti gli strumenti previsti. In base alla licenza d’uso acquistata si determina il tipo di utilizzo del software. Nel prossimo capitolo verra mostrato come esempio un progetto che utilizza un sistema SCADA ed un PLC di fabbricazione SIEMENS. Utilizzato per rappresentare un funzionamento corretto del impianto. Il colore arancio viene utilizzato per segnalare ritardi ed altri tipi di anomalie lievi. Tutti gli altri colori sono a discrezione del progettista ,tenendo sempre presente il dispositivo di destinazione. Le segnalazioni: Quando si verifica un evento di malfunzionamento o allarme per cui e richiesto l’intervento del operatore. Il messaggio di notifica del evento occorso deve essere un messaggio chiaro in modo che possa guidare l’operatore alla fonte del problema. Quindi si evitano messaggi troppo corti o tecnici in quanto non sono di aiuto al operatore per risolvere i problemi. Metodi di input e di output: I dispositivi consentono di utilizzare diversi metodi di interazione, quali pulsanti hardware, pulsanti software (nel caso dei dispositivi touch screen ), stilo, mouse e tastiera. Bisogna quindi tenere presente le dimensioni dello schermo e di conseguenza dimensionare correttamente le componenti grafiche , quali i pulsanti,menu,check box ect. Per migliorare l’accessibilita dell’applicazione e consigliabile tenere in considerazione tutti questi vincoli durante la progettazione del interfaccia. Un altro aspetto da valutare e l'analisi del tipo di attivita che puo essere svolta dal utente, dalla rapidita con cui tali attivita vengono completate, ed alle prestazioni di dispositivi e applicazioni. E pertanto necessario progettare l’interfaccia dell’applicazione in modo da semplificare il completamento delle attivita eseguite dall’utente , anziche pensare all’applicazione in termini estetici. A questo scopo , è possibile riprodurre un interfaccia simile o correlata alle attivita compiute dagli 
+utenti con il dispositivo ,rendere l’applicazione il piu possibile gradevole esteticamente
+sapendo quali elementi e possibile visualizzare sullo schermo e quali no
+, tenendo presente quanto detto sopra.
+
+\subsection{Requisiti progettuali di un Interfaccia Utente}
+I requisiti principali che deve possedere l’interfaccia utente sono utilizzabilita e  accessibilita. Con il termine utilizzabilit ` a si intende il grado in cui un prodotto puo essere usato da particolari utenti per raggiungere certi obiettivi con efficacia, efficienza e soddisfazione in uno specifico contesto d’uso.Il problema dell’usabilià e emerso dapprima negli anni 80 con la diffusione delle tecnologie informatiche a livello di ufficio e di famiglia , ed e definitivamente esploso negli anni 
+90 con la diffusione del personal computer . Mentre prima i principali utilizzatori del prodotto software finivano per essere gli stessi progettisti o persone esperte con una formazione simile ai progettisti, ora gli utenti finali del software non sono necessariamente esperti di informatica. L’utilizzabilita nasce dunque soprattutto come ausilio alla progettazione : l’obiettivo e fare in modo che il modello mentale di chi ha progettato il software (design model) , da cui deriva il suo reale funzionamento, corrisponda il piu possibile al modello mentale del funzionamento del software così come se lo costruisce l’utente finale (user model). Le tecniche diutilizzabilita tentano dunque di porre al centro dell’attenzione progettuale proprio l’utente: ad ogni sua azione l’interfaccia proporra un risultato, un cambiamento di stato, ma ai fini del utilizzabilita non importa come l’interfaccia sia giunta a quello stato cioe quali meccanismi di programmazione siano stati usati. L’accessibilia consiste nella possibilità di rendere fruibili i contenuti delle pagine e dei dati in essa contenuti agli utenti finali. Il compito del progettista e quello di produrre del software, che consenta di rendere la struttura della pagina il piu` possibile flessibile , in modo che i suoi contenuti possano essere utilizzati senza perdita d’informazioni.
+
+\subsection{Paradigma MVC}
+Mediante il paradigma MVC Model, View, Controller vengono identificati i tre componenti fondamentali di un’applicazione interattiva. L’intento della tecnica Model, View, Controllore applicato agli HMI e di disaccoppiare il più possibile  tra loro le parti dell’applicazione adibite al controllo, all’accesso ai dati, e alla loro presentazione. Questo approccio porta a diversi vantaggi che sono:
+- Indipendenza strutturale tra model, logica di presentazione view e la logica
+di controllo controller.
+- Viste diverse per lo stesso model.
+- Separazione dei compiti dei ruoli e relative interfacce.
+
+MODEL: Il core dell’applicazione viene implementato dal Model, che incapsulando lo stato dell’applicazione definisce i dati e le operazioni che possono essere eseguite su questi.Quindi definisce le regole per l’interazione con i dati, esponendo alla view ed al controller rispettivamente le funzionalita per l‘accesso e l‘aggiornamento.Il model puo inoltre avere la responsabilità di notificare ai componenti della view eventuali aggiornamenti verificatisi in seguito a richieste del
+controller, al fine di permettere alle view di presentare agli occhi degli utenti dati sempre aggiornati.
+
+VIEW: La logica di presentazione dei dati viene gestita solo e solamente dalla view,questa deve fondamentalmente gestire la costruzione dell’interfaccia grafica GUI che rappresenta il mezzo mediante il quale gli utenti interagiranno con il sistema. Ogni GUI puo essere costituita da schermate diverse che presentano più modi di interagire con i dati dell’applicazione.Inoltre la view delega al controller
+l’esecuzione dei processi richiesti dall’utente dopo averne catturato gli input e la scelta delle eventuali schermate da presentare. 
+
+CONTROLLER: Questo componente ha la responsabilita di trasformare le interazioni dell’utente della view in azioni eseguite dal model. Ma il controller non rappresenta un semplice ponte tra view e model, infatti realizza la mappatura tra input dell’utente e processi eseguiti dal model, e seleziona la schermate della view richieste, il controller inoltre implementa la logica di controllo dell’applicazione.
+
+\subsection{Comunicazione Tra PLC ed HMI} Come illustrato precedentemente la comunicazione tra HMI-SCADA e PLC avviene principalmente mediante connessione seriale o ethernet. I protocolli di livello superiore possono essere differenti a seconda del tipo di applicazione e non e garantita l’interoperabilità tra i differenti standard. Le piu diffuse implementazioni di questi protocolli sono MODBUS/RS 232 , MODBUS TCP-IP, PROFIBUS RS232-RS485 (vedi capitolo 2) ,PROFINET TCP-IP, INDUSTRIAL ETHERNET, DEVICENET, MPI, ed infine CONTROLNET ,protocolli che non sono trattati in quest tesi.
+Come si puo vedere dal immagine  la connessione tra HMI e PLC generalmente una connessione seriale punto-punto, anche se e possibile fare comunicare un OP (Pannello Operatore) con piu PLC. Inoltre si può stabilire che la logica funzionale sia situata all’interno del PLC , cioe che questo sia l’unico strumento di elaborazione delle informazioni. Quindi il compito del OP e quello di visualizzare e se necessario modificare le informazioni contenute al interno del PLC. Infatti nella memoria del OP vengono memorizzate variabili che fanno riferimento a indirizzi di memoria contenuti nel PLC. Come descritto in capitolo 2 i dispositivi HMI-SCADA fanno parte dei dispositivi master. In una connessione OP-PLC il ruolo del master e riservato al OP ,in quanto ` e proprio quest’ultimo a prendere l’iniziativa alla comunicazione. Il sistema operativo del OP scansiona la memoria interna in modo ciclico dopodiche genera le richieste che successivamente verranno inviate al PLC il quale a sua volta inviera all’OP i dati richiesti.Questo procedimento serve ad avere una visualizzazione dei dati sempre aggiornata. Oltre
+a visualizzare i valori di processo, lo HMI deve essere progettato in modo da offrire gli strumenti affinche l’utente possa intervenire sui valori di processo: per esempio modificandoli secondo esigenze di produzione.
+
+\subsection{Caratteristiche del Software SCADA}
+Come gia accennato i software di supervisione sono denominati SCADA, questi programmi rappresentano in forma grafica lo stato di un segnale proveniente da una impianto.La forma puo essere planimetrica nel senso che e legata al disegno della macchina, oppure in forma tabellare tipo allarme oppure ancora in forma di grafico temporale. Lavorare con tali software non costituisce una vera e propria programmazione anche se mettono a disposizione strumenti di sviluppo ad esempio compilatori C, Visual Basic,Java ect, ma si tratta di una modellazione del software fino a fargli assumere la forma voluta. Clienti diversi hanno esigenze diverse sia in fatto di visualizzazione che di progetto , i software SCADA mettono a disposizione del progettista un insieme di strumenti per lo sviluppo del progetto.Tali strumenti a volte possono risultare insufficienti per il completamento del progetto ,ed e compito del progettista realizzare le funzionalita mancanti mediate l’utilizzo di linguaggi di programmazione. Il sistema di supervisione SCADA e il complesso delle apparecchiature che interfacciano i sistemi di regolazione e controllo con gli operatori. Al sistema di supervisione e demandato il compito di rappresentare tramite pagine grafiche il funzionamento dellimpianto, nonche di accettare comandi dall’operatore per la conduzione dell’impianto stesso. Da un punto di vista strutturale il software SCADA si puo descrivere secondo lo schema raffigurato nella immagine fig:3.5,come si puo vedere questo software ha una strutture intera complessa. Inoltre questi software richiedono molte risorse hardware per funzionare e di conseguenza per far’girare l’applicazione viene utilizzato un PC desktop a loro dedicato, opportunamente configurato.
+
+Un sistema di supervisione e raccolta dati si intende costituito da elaboratori standard PC equipaggiati con software di tipo SCADA e connesso con i controllori (PLC) tramite una rete. Lo SCADA ha una architettura di tipo client server, nello stesso applicativo gira sia la parte client che quella server .Al momento della configurazione della rete vengono decisi i ruoli delle varie stazioni .Le stazioni
+client curano solamente l’interfaccia grafica uomo/macchina (HMI) ,non sono connesse ad alcun controllore PLC come mostrato in fig:3.6, sono solamente delle repliche della stazione server.
+
+Le stazioni server assolvono alla funzione di scambio dati tra i sistemi di regolazione PLC e il database interno nel quale sono archiviati in tempo reale tutti i parametri dell’impianto. Generalmente in un sistema di supervisione non ci sono limiti al numero di stazioni server o client che possono essere installate, se non i limiti fisici di memoria dei PC server o di velocita della rete.
+I dati richiesti dalle stazioni client sono solo quelli in corso di visualizzazione, in ogni caso qualunque client avra a disposizione i dati di tutti i server connessi alla rete. Nei client non vi sono duplicazioni del database di un sistema di supervisione, le uniche stazioni a cui e consentito un duplicato del database sono le stazioni dette server di backup fig:3.6, che intervengono automaticamente in sostituzione delle stazioni principali in caso di guasto. Inoltre essendo lo scada un software commerciale, viene commercializzato in due versioni che sono: versione runtime, che si occupa di eseguire un applicativo gia sviluppata, e la versione di sviluppo che mette a disposizione del progettista tutti gli strumenti previsti. In base alla licenza d’uso acquistata si determina il tipo di utilizzo del software. Nel prossimo capitolo verra mostrato come esempio un progetto che utilizza un sistema SCADA ed un PLC di fabbricazione SIEMENS.
 
 \section{HMI dell'Etichettatrice}
 Asem da 11 pollici con windows 7 embedded ecc ecc

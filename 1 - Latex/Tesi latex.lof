@@ -1,23 +1,76 @@
 \select@language {italian}
 \select@language {italian}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista dall'alto della struttura della macchina}}{6}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Vista sotto scocca della struttura della macchina}}{7}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces HERMA 400}}{8}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces HERMA 400 Sensore Autoapprendimento}}{9}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Nastro in Ingresso}}{13}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Doppio Sensore Carico Minimo ed anti rovesciamento flacone}}{14}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Sensore presenza flacone stella ingresso}}{15}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Zona di applicazione etichetta }}{16}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Massaggiatore Etichette }}{17}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Stella di Scarto }}{18}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Raccoglitore di Scarto}}{19}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista dall'alto della struttura della macchina}}{8}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Vista sotto scocca della struttura della macchina}}{9}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces HERMA 400}}{10}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces HERMA 400 Sensore Autoapprendimento}}{11}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Motore Brushless Mitsibishi HG-Series}}{12}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Azionamento Profinet Mitsubishi MR-J4-TM}}{13}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Inverter di Frequenza Mitsubishi FR-D700SC}}{14}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Inverter di Frequenza Mitsubishi FR-D700SC}}{14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Stampante Termica VideoJet DataFlex 6530}}{15}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Encoder Profinet Sick AFM60}}{16}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Siemens Simatic ET200S}}{17}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces ASEM HMI Panel HT2150}}{18}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Quadro Elettrico Completo}}{18}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Nastro in Ingresso}}{20}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Doppio Sensore Carico Minimo ed anti rovesciamento flacone}}{21}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Sensore presenza flacone stella ingresso}}{22}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Zona di applicazione etichetta }}{23}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Massaggiatore Etichette }}{24}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Stella di Scarto }}{25}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Raccoglitore di Scarto}}{26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Foto di un albero a camme.}}{24}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schema di collegamento elettrico generale relativo al PLC ed ai moduli }}{28}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schema del primo Byte di Ingressi Del Secondo Modulo I/O}}{29}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schema elettrico relativo alle Uscite del Modulo Analogico }}{29}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Configurazione Tia Portal del Rack PLC}}{30}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mapping Variabili GSD Motore Mitsubishi. Il Custom Telegram del GSD Mappa gli ingressi dei registri dell'azionamento sulle variabili I-600 alla I-647 e lo stesso per le uscite rispettivamente Q-600 a Q-647}}{31}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Linguaggio SCL}}{35}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Linguaggio IL}}{36}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Linguaggio a blocchi SFC}}{37}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Linguaggio a Blocchi di Funzioni}}{38}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Linguaggio a Contatti Ladder}}{39}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Rappresentazione Simbolica di alcuni Elementi Base}}{41}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Bobina attivata da due rami distinti}}{42}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Soluzione con contatti C1 e C2 in parallelo sullo stesso ramo}}{43}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Soluzione usando Latch e UnLatch}}{43}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces DB-ALLARMI}}{44}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Mapping di Ingressi}}{45}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Mapping di Uscite}}{46}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Function Block Normalizzazione}}{47}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Foto di un albero a camme.}}{48}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces DB-CAMME MACCHINA}}{49}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces FOTO TIA POTRAL SHIFT HELP}}{50}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Database contenente o Shift-Register}}{51}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces SHIFT REGISTER MCCHINA FOTO}}{52}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Segmento Ciclo Auomatico attivazione SHL}}{53}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Segmento Ciclo Auomatico presenza prodotto}}{54}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Trigger etichettatura ciclo automatico}}{54}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces IMMAGINE DI TUTTI GLI SHIFT REALI}}{55}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces IMMAGINE SPIEGAZIONE AND BIT A BIT}}{56}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Relazione fra i livelli OSI e TCP/IP.}}{29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Relazione fra i livelli e protocolli dell'architettura TCP/IP.}}{33}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Campi di utilizzo OPC.}}{35}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Estensione modello.}}{37}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Relazione fra i livelli OSI e TCP/IP.}}{60}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Relazione fra i livelli e protocolli dell'architettura TCP/IP.}}{64}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Campi di utilizzo OPC.}}{66}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Estensione modello.}}{68}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Immagini di Monete catturate nella medesima applicazione}}{72}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Locatore di un trained Model (ROI regione circolare gialla)}}{73}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Locatore di trained Model. Notare il "Tool Origin" riferito al centro del Locatore Circolare }}{73}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Region of Interest per un controllo OCR (Area di Tratteggio Arancione)}}{74}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Controllo dell'uscita discreta della telecamera}}{75}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Esempio di Applicazione CPM}}{76}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Immagine Dell'etichetta catturata da Telecamera}}{77}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Controllo PharmaCode}}{78}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Locatore Per Controllo OCR}}{79}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Controllo OCR Codice Lotto}}{80}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Controllo OCR Scadenza Lotto}}{81}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Pass-Fail Branch}}{82}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Discrete Output}}{82}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Interfaccia Operatore Controllo PharmaCode}}{83}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Interfaccia Impostazione Locatore OCR}}{84}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Interfaccia Controllo OCR Scadenza Lotto}}{84}
 \addvspace {10\p@ }
