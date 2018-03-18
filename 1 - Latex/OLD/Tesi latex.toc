@@ -1,0 +1,68 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Etichettatrice RMC17002}{7}
+\contentsline {section}{\numberline {1.1}Struttura Meccanica}{7}
+\contentsline {section}{\numberline {1.2}Dispositivi Elettrici ed Elettronici}{9}
+\contentsline {section}{\numberline {1.3}Funzionamento del Macchinario}{18}
+\contentsline {subsection}{\numberline {1.3.1}Ingresso Flaconi}{19}
+\contentsline {subsection}{\numberline {1.3.2}Controllo Presenza}{21}
+\contentsline {subsection}{\numberline {1.3.3}Etichettatura}{22}
+\contentsline {subsection}{\numberline {1.3.4}Massaggio}{23}
+\contentsline {subsection}{\numberline {1.3.5}Uscita Flacone}{24}
+\contentsline {chapter}{\numberline {2}Processo di Sviluppo software PLC}{27}
+\contentsline {section}{\numberline {2.1}Fase Iniziale }{28}
+\contentsline {subsection}{\numberline {2.1.1}Configurazione Iniziale con TiaPortal v13}{30}
+\contentsline {section}{\numberline {2.2}Struttura Software PLC}{32}
+\contentsline {subsection}{\numberline {2.2.1}Linguaggi di Programmazione}{33}
+\contentsline {subsubsection}{Il linguaggio Structured Text}{34}
+\contentsline {subsubsection}{Il linguaggio Instruction List}{35}
+\contentsline {subsubsection}{Il linguaggio Sequential Functional Chart}{36}
+\contentsline {subsubsection}{Il linguaggio Function Block Diagram}{37}
+\contentsline {subsubsection}{Il linguaggio Ladder Diagram}{38}
+\contentsline {subsection}{\numberline {2.2.2}Linguaggio di Programmazione Ladder Diagram}{39}
+\contentsline {subsection}{\numberline {2.2.3}Caratteristiche e Confronto con Linguaggi di programmazione tradizionali}{41}
+\contentsline {section}{\numberline {2.3}Best Practices}{44}
+\contentsline {subsection}{\numberline {2.3.1}I/O Mapping}{45}
+\contentsline {subsection}{\numberline {2.3.2}Function Blocks}{46}
+\contentsline {section}{\numberline {2.4}Camme Digitali e Sistemi di Controllo}{47}
+\contentsline {section}{\numberline {2.5}Controllo Mediante Shift Register}{51}
+\contentsline {chapter}{\numberline {3}Protocolli di comunicazione}{58}
+\contentsline {section}{\numberline {3.1}Profinet}{58}
+\contentsline {subsection}{\numberline {3.1.1}Caratteristiche}{59}
+\contentsline {section}{\numberline {3.2}TCP}{60}
+\contentsline {subsection}{\numberline {3.2.1}Server e client}{62}
+\contentsline {subsection}{\numberline {3.2.2}Incapsulamento dei dati}{62}
+\contentsline {subsection}{\numberline {3.2.3}Descizione livelli}{63}
+\contentsline {subsubsection}{Livello Accesso di rete (host to network)}{63}
+\contentsline {subsubsection}{Il livello Internet}{63}
+\contentsline {subsubsection}{Il livello di trasporto}{64}
+\contentsline {subsubsection}{Il livello applicazione}{64}
+\contentsline {section}{\numberline {3.3}Open Platform Communications (OPC)}{65}
+\contentsline {subsection}{\numberline {3.3.1}Architettura client/server}{66}
+\contentsline {subsection}{\numberline {3.3.2}Unified Architecture}{67}
+\contentsline {chapter}{\numberline {4}Sviluppo Sistema di Visione}{70}
+\contentsline {subsection}{\numberline {4.0.1}Datalogic Impact Sofwtare Suite}{70}
+\contentsline {subsection}{\numberline {4.0.2}Datalogic VPM}{71}
+\contentsline {subsection}{\numberline {4.0.3}Datalogic CPM}{75}
+\contentsline {subsection}{\numberline {4.0.4}Programma di Visione LabelTech}{76}
+\contentsline {subsection}{\numberline {4.0.5}Control Panel Manager LabelTech}{83}
+\contentsline {chapter}{\numberline {5}HMI/SCADA}{86}
+\contentsline {subsection}{\numberline {5.0.1}Tipologie di HMI}{87}
+\contentsline {subsection}{\numberline {5.0.2}Progettazione di un Interfaccia}{88}
+\contentsline {subsection}{\numberline {5.0.3}Requisiti progettuali di un Interfaccia Utente}{90}
+\contentsline {subsection}{\numberline {5.0.4}Paradigma MVC}{91}
+\contentsline {subsection}{\numberline {5.0.5}Comunicazione Tra PLC ed HMI}{92}
+\contentsline {subsection}{\numberline {5.0.6}Caratteristiche del Software SCADA}{93}
+\contentsline {section}{\numberline {5.1}Industria 4.0}{94}
+\contentsline {section}{\numberline {5.2}Normative settore farmaceutico: CFR 21}{96}
+\contentsline {subsection}{\numberline {5.2.1}CFR 21 parte 11}{97}
+\contentsline {section}{\numberline {5.3}SQL server}{99}
+\contentsline {subsection}{\numberline {5.3.1}SQL server reporting services}{100}
+\contentsline {subsubsection}{Report impaginati}{100}
+\contentsline {subsubsection}{Report per dispositivi mobili}{101}
+\contentsline {subsubsection}{Portale web}{101}
+\contentsline {subsubsection}{Reporting Services in modalit\IeC {\`a} integrata SharePoint}{101}
+\contentsline {subsubsection}{Funzionalit\IeC {\`a} di programmazione di Reporting Services }{102}
+\contentsline {section}{\numberline {5.4}Tool Sviluppo}{102}
+\contentsline {section}{\numberline {5.5}HMI dell'Etichettatrice}{105}
+\contentsline {chapter}{\numberline {6}Conclusioni e Sviluppi Futuri}{109}

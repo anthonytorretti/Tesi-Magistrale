@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.1.5)  6 MAR 2018 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.1.5)  18 MAR 2018 18:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,620 +1018,725 @@ m-
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `"Tesi latex.toc"'.
 
- [1]
-(./Tesi latex.lof [2
+ [1] (./Tesi latex.lof
+[2
 
 ] [3])
 \tf@lof=\write5
 \openout5 = `"Tesi latex.lof"'.
 
- [4] [5] [6]
+ [4] [5] [6] [7]
 Capitolo 1.
 <Immagini/MEC1.JPG, id=36, 3356.54pt x 2722.17pt>
 File: Immagini/MEC1.JPG Graphic file (type jpg)
 <use Immagini/MEC1.JPG>
-Package pdftex.def Info: Immagini/MEC1.JPG  used on input line 72. on input lin
-e 72.
+Package pdftex.def Info: Immagini/MEC1.JPG  used on input line 80. on input lin
+e 80.
 Package pdftex.def Info: Requested size: 341.43306pt x 276.88509pt on input lin
-e 72.
-[7
+e 80.
+[8
 
 ]
 <Immagini/MEC2.JPG, id=40, 5203.44pt x 3468.96pt>
 File: Immagini/MEC2.JPG Graphic file (type jpg)
 <use Immagini/MEC2.JPG>
-Package pdftex.def Info: Immagini/MEC2.JPG  used on input line 81. on input lin
-e 81.
+Package pdftex.def Info: Immagini/MEC2.JPG  used on input line 89. on input lin
+e 89.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 81.
- [8 <./Immagini/MEC1.JPG>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 95.
+e 89.
+ [9 <./Immagini/MEC1.JPG>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
 <Immagini/ELE1.JPG, id=44, 5203.44pt x 3468.96pt>
 File: Immagini/ELE1.JPG Graphic file (type jpg)
 <use Immagini/ELE1.JPG>
-Package pdftex.def Info: Immagini/ELE1.JPG  used on input line 102. on input li
-ne 102.
+Package pdftex.def Info: Immagini/ELE1.JPG  used on input line 108. on input li
+ne 108.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 102.
+e 108.
 
-[9 <./Immagini/MEC2.JPG>]
+[10 <./Immagini/MEC2.JPG>]
 <Immagini/ELE2.JPG, id=50, 5203.44pt x 3468.96pt>
 File: Immagini/ELE2.JPG Graphic file (type jpg)
 <use Immagini/ELE2.JPG>
-Package pdftex.def Info: Immagini/ELE2.JPG  used on input line 112. on input li
-ne 112.
+Package pdftex.def Info: Immagini/ELE2.JPG  used on input line 118. on input li
+ne 118.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 112.
- [10 <./Immagini/ELE1.JPG>]
+e 118.
+ [11 <./Immagini/ELE1.JPG>]
 <Immagini/ELE3.jpg, id=54, 301.125pt x 204.765pt>
 File: Immagini/ELE3.jpg Graphic file (type jpg)
 <use Immagini/ELE3.jpg>
-Package pdftex.def Info: Immagini/ELE3.jpg  used on input line 124. on input li
-ne 124.
+Package pdftex.def Info: Immagini/ELE3.jpg  used on input line 130. on input li
+ne 130.
 Package pdftex.def Info: Requested size: 227.62204pt x 154.78877pt on input lin
-e 124.
- [11 <./Immagini/ELE2.JPG>]
+e 130.
+ [12 <./Immagini/ELE2.JPG>]
 <Immagini/ELE4.jpg, id=59, 42.1575pt x 76.8471pt>
 File: Immagini/ELE4.jpg Graphic file (type jpg)
 <use Immagini/ELE4.jpg>
-Package pdftex.def Info: Immagini/ELE4.jpg  used on input line 134. on input li
-ne 134.
+Package pdftex.def Info: Immagini/ELE4.jpg  used on input line 140. on input li
+ne 140.
 Package pdftex.def Info: Requested size: 142.26378pt x 259.3325pt on input line
- 134.
-[12 <./Immagini/ELE3.jpg>]
+ 140.
+ [13 <./Immagini/ELE3.jpg> <./Immagini/ELE4.jpg>]
 <Immagini/ELE6.jpg, id=63, 132.79613pt x 150.5625pt>
 File: Immagini/ELE6.jpg Graphic file (type jpg)
 <use Immagini/ELE6.jpg>
-Package pdftex.def Info: Immagini/ELE6.jpg  used on input line 144. on input li
-ne 144.
+Package pdftex.def Info: Immagini/ELE6.jpg  used on input line 150. on input li
+ne 150.
 Package pdftex.def Info: Requested size: 170.71652pt x 193.57625pt on input lin
-e 144.
- [13 <./Immagini/ELE4.jpg>]
-<Immagini/ELE5.jpg, id=67, 258.9675pt x 195.73125pt>
+e 150.
+<Immagini/ELE5.jpg, id=64, 258.9675pt x 195.73125pt>
 File: Immagini/ELE5.jpg Graphic file (type jpg)
 <use Immagini/ELE5.jpg>
-Package pdftex.def Info: Immagini/ELE5.jpg  used on input line 154. on input li
-ne 154.
+Package pdftex.def Info: Immagini/ELE5.jpg  used on input line 160. on input li
+ne 160.
 Package pdftex.def Info: Requested size: 227.62204pt x 172.0469pt on input line
- 154.
- [14 <./Immagini/ELE6.jpg> <./Immagini/ELE5.jpg>]
-<Immagini/ELE8.jpg, id=71, 451.6875pt x 382.42876pt>
+ 160.
+ [14 <./Immagini/ELE6.jpg>]
+<Immagini/ELE8.jpg, id=68, 451.6875pt x 382.42876pt>
 File: Immagini/ELE8.jpg Graphic file (type jpg)
 <use Immagini/ELE8.jpg>
-Package pdftex.def Info: Immagini/ELE8.jpg  used on input line 164. on input li
-ne 164.
+Package pdftex.def Info: Immagini/ELE8.jpg  used on input line 170. on input li
+ne 170.
 Package pdftex.def Info: Requested size: 227.62204pt x 192.72527pt on input lin
-e 164.
+e 170.
+
+[15 <./Immagini/ELE5.jpg> <./Immagini/ELE8.jpg>]
 <Immagini/ELE7.jpg, id=72, 602.25pt x 487.8225pt>
 File: Immagini/ELE7.jpg Graphic file (type jpg)
 <use Immagini/ELE7.jpg>
-Package pdftex.def Info: Immagini/ELE7.jpg  used on input line 175. on input li
-ne 175.
+Package pdftex.def Info: Immagini/ELE7.jpg  used on input line 181. on input li
+ne 181.
 Package pdftex.def Info: Requested size: 227.62204pt x 184.37703pt on input lin
-e 175.
- [15 <./Immagini/ELE8.jpg>]
+e 181.
+ [16 <./Immagini/ELE7.jpg>]
 <Immagini/ELE11.jpg, id=76, 72.27pt x 72.27pt>
 File: Immagini/ELE11.jpg Graphic file (type jpg)
 <use Immagini/ELE11.jpg>
-Package pdftex.def Info: Immagini/ELE11.jpg  used on input line 192. on input l
-ine 192.
+Package pdftex.def Info: Immagini/ELE11.jpg  used on input line 198. on input l
+ine 198.
 Package pdftex.def Info: Requested size: 227.62204pt x 227.6351pt on input line
- 192.
- [16 <./Immagini/ELE7.jpg>]
-<Immagini/ELE9.jpg, id=80, 401.5pt x 322.20375pt>
+ 198.
+<Immagini/ELE9.jpg, id=77, 401.5pt x 322.20375pt>
 File: Immagini/ELE9.jpg Graphic file (type jpg)
 <use Immagini/ELE9.jpg>
-Package pdftex.def Info: Immagini/ELE9.jpg  used on input line 203. on input li
-ne 203.
+Package pdftex.def Info: Immagini/ELE9.jpg  used on input line 209. on input li
+ne 209.
 Package pdftex.def Info: Requested size: 227.62204pt x 182.66983pt on input lin
-e 203.
+e 209.
 
 [17 <./Immagini/ELE11.jpg>]
-<Immagini/ELE10.JPG, id=85, 5203.44pt x 3468.96pt>
+<Immagini/ELE10.JPG, id=81, 5203.44pt x 3468.96pt>
 File: Immagini/ELE10.JPG Graphic file (type jpg)
 <use Immagini/ELE10.JPG>
-Package pdftex.def Info: Immagini/ELE10.JPG  used on input line 212. on input l
-ine 212.
+Package pdftex.def Info: Immagini/ELE10.JPG  used on input line 218. on input l
+ine 218.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 212.
+e 218.
  [18 <./Immagini/ELE9.jpg> <./Immagini/ELE10.JPG>]
-<Immagini/MEC3.JPG, id=89, 5203.44pt x 3468.96pt>
+<Immagini/MEC3.JPG, id=86, 5203.44pt x 3468.96pt>
 File: Immagini/MEC3.JPG Graphic file (type jpg)
 <use Immagini/MEC3.JPG>
-Package pdftex.def Info: Immagini/MEC3.JPG  used on input line 236. on input li
-ne 236.
+Package pdftex.def Info: Immagini/MEC3.JPG  used on input line 242. on input li
+ne 242.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 236.
+e 242.
 
 [19]
-<Immagini/MEC4.JPG, id=94, 5203.44pt x 3468.96pt>
+<Immagini/MEC4.JPG, id=91, 5203.44pt x 3468.96pt>
 File: Immagini/MEC4.JPG Graphic file (type jpg)
 <use Immagini/MEC4.JPG>
-Package pdftex.def Info: Immagini/MEC4.JPG  used on input line 246. on input li
-ne 246.
+Package pdftex.def Info: Immagini/MEC4.JPG  used on input line 252. on input li
+ne 252.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 246.
+e 252.
  [20 <./Immagini/MEC3.JPG>]
-<Immagini/MEC5.JPG, id=98, 5203.44pt x 3468.96pt>
+<Immagini/MEC5.JPG, id=95, 5203.44pt x 3468.96pt>
 File: Immagini/MEC5.JPG Graphic file (type jpg)
 <use Immagini/MEC5.JPG>
-Package pdftex.def Info: Immagini/MEC5.JPG  used on input line 258. on input li
-ne 258.
+Package pdftex.def Info: Immagini/MEC5.JPG  used on input line 264. on input li
+ne 264.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 258.
+e 264.
  [21 <./Immagini/MEC4.JPG>]
-<Immagini/MEC6.jpg, id=102, 1244.65pt x 1043.9pt>
+<Immagini/MEC6.jpg, id=99, 1244.65pt x 1043.9pt>
 File: Immagini/MEC6.jpg Graphic file (type jpg)
 <use Immagini/MEC6.jpg>
-Package pdftex.def Info: Immagini/MEC6.jpg  used on input line 273. on input li
-ne 273.
+Package pdftex.def Info: Immagini/MEC6.jpg  used on input line 277. on input li
+ne 277.
 Package pdftex.def Info: Requested size: 341.43306pt x 286.36456pt on input lin
-e 273.
+e 277.
  [22 <./Immagini/MEC5.JPG>]
-<Immagini/MEC7.JPG, id=106, 5203.44pt x 3468.96pt>
+<Immagini/MEC7.JPG, id=103, 5203.44pt x 3468.96pt>
 File: Immagini/MEC7.JPG Graphic file (type jpg)
 <use Immagini/MEC7.JPG>
-Package pdftex.def Info: Immagini/MEC7.JPG  used on input line 283. on input li
-ne 283.
+Package pdftex.def Info: Immagini/MEC7.JPG  used on input line 287. on input li
+ne 287.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 283.
+e 287.
  [23 <./Immagini/MEC6.jpg>]
-<Immagini/MEC8.jpg, id=111, 3822.28pt x 3131.7pt>
+<Immagini/MEC8.jpg, id=107, 3822.28pt x 3131.7pt>
 File: Immagini/MEC8.jpg Graphic file (type jpg)
 <use Immagini/MEC8.jpg>
-Package pdftex.def Info: Immagini/MEC8.jpg  used on input line 293. on input li
-ne 293.
+Package pdftex.def Info: Immagini/MEC8.jpg  used on input line 297. on input li
+ne 297.
 Package pdftex.def Info: Requested size: 341.43306pt x 279.73827pt on input lin
-e 293.
+e 297.
  [24 <./Immagini/MEC7.JPG>]
-<Immagini/MEC9.JPG, id=115, 3468.96pt x 5203.44pt>
+<Immagini/MEC9.JPG, id=112, 3468.96pt x 5203.44pt>
 File: Immagini/MEC9.JPG Graphic file (type jpg)
 <use Immagini/MEC9.JPG>
-Package pdftex.def Info: Immagini/MEC9.JPG  used on input line 302. on input li
-ne 302.
+Package pdftex.def Info: Immagini/MEC9.JPG  used on input line 306. on input li
+ne 306.
 Package pdftex.def Info: Requested size: 341.43306pt x 512.1171pt on input line
- 302.
+ 306.
  [25 <./Immagini/MEC8.jpg>] [26 <./Immagini/MEC9.JPG>]
 Capitolo 2.
 [27
 
 ]
-<Immagini/SCELE1.png, id=125, 674.52pt x 456.20438pt>
+<Immagini/SCELE1.png, id=122, 674.52pt x 456.20438pt>
 File: Immagini/SCELE1.png Graphic file (type png)
 <use Immagini/SCELE1.png>
-Package pdftex.def Info: Immagini/SCELE1.png  used on input line 318. on input 
-line 318.
+Package pdftex.def Info: Immagini/SCELE1.png  used on input line 321. on input 
+line 321.
 Package pdftex.def Info: Requested size: 341.43306pt x 230.92783pt on input lin
-e 318.
+e 321.
  [28 <./Immagini/SCELE1.png (PNG copy)>]
-<Immagini/SCELE2.png, id=129, 675.27281pt x 456.20438pt>
+<Immagini/SCELE2.png, id=126, 675.27281pt x 456.20438pt>
 File: Immagini/SCELE2.png Graphic file (type png)
 <use Immagini/SCELE2.png>
-Package pdftex.def Info: Immagini/SCELE2.png  used on input line 328. on input 
-line 328.
+Package pdftex.def Info: Immagini/SCELE2.png  used on input line 331. on input 
+line 331.
 Package pdftex.def Info: Requested size: 341.43306pt x 230.67026pt on input lin
-e 328.
-<Immagini/SCELE3.png, id=130, 675.27281pt x 457.71pt>
+e 331.
+<Immagini/SCELE3.png, id=127, 675.27281pt x 457.71pt>
 File: Immagini/SCELE3.png Graphic file (type png)
 <use Immagini/SCELE3.png>
-Package pdftex.def Info: Immagini/SCELE3.png  used on input line 335. on input 
-line 335.
+Package pdftex.def Info: Immagini/SCELE3.png  used on input line 338. on input 
+line 338.
 Package pdftex.def Info: Requested size: 341.43306pt x 231.43156pt on input lin
-e 335.
+e 338.
  [29 <./Immagini/SCELE2.png (PNG copy)> <./Immagini/SCELE3.png (PNG copy)>]
-<Immagini/TIA0.png, id=135, 426.84468pt x 234.1247pt>
+<Immagini/TIA0.png, id=131, 426.84468pt x 234.1247pt>
 File: Immagini/TIA0.png Graphic file (type png)
 <use Immagini/TIA0.png>
-Package pdftex.def Info: Immagini/TIA0.png  used on input line 346. on input li
-ne 346.
+Package pdftex.def Info: Immagini/TIA0.png  used on input line 349. on input li
+ne 349.
 Package pdftex.def Info: Requested size: 341.43306pt x 187.28928pt on input lin
-e 346.
+e 349.
  [30 <./Immagini/TIA0.png (PNG copy)>]
-<Immagini/TIA1.png, id=139, 713.66624pt x 347.04657pt>
+<Immagini/TIA1.png, id=136, 713.66624pt x 347.04657pt>
 File: Immagini/TIA1.png Graphic file (type png)
 <use Immagini/TIA1.png>
-Package pdftex.def Info: Immagini/TIA1.png  used on input line 371. on input li
-ne 371.
+Package pdftex.def Info: Immagini/TIA1.png  used on input line 373. on input li
+ne 373.
 Package pdftex.def Info: Requested size: 341.43306pt x 166.03502pt on input lin
-e 371.
+e 373.
 
 [31 <./Immagini/TIA1.png (PNG copy)>] [32] [33]
-<Immagini/SCL.png, id=149, 235.63031pt x 297.36093pt>
+<Immagini/SCL.png, id=146, 235.63031pt x 297.36093pt>
 File: Immagini/SCL.png Graphic file (type png)
 <use Immagini/SCL.png>
-Package pdftex.def Info: Immagini/SCL.png  used on input line 423. on input lin
-e 423.
+Package pdftex.def Info: Immagini/SCL.png  used on input line 421. on input lin
+e 421.
 Package pdftex.def Info: Requested size: 227.62204pt x 287.26004pt on input lin
-e 423.
+e 421.
  [34] [35 <./Immagini/SCL.png (PNG copy)>]
-<Immagini/IL.png, id=157, 758.835pt x 367.3725pt>
+<Immagini/IL.png, id=153, 758.835pt x 367.3725pt>
 File: Immagini/IL.png Graphic file (type png)
 <use Immagini/IL.png>
-Package pdftex.def Info: Immagini/IL.png  used on input line 437. on input line
- 437.
+Package pdftex.def Info: Immagini/IL.png  used on input line 433. on input line
+ 433.
 Package pdftex.def Info: Requested size: 341.43306pt x 165.29927pt on input lin
-e 437.
+e 433.
  [36 <./Immagini/IL.png (PNG copy)>]
-<Immagini/BLK.png, id=161, 456.20438pt x 267.24844pt>
+<Immagini/BLK.png, id=158, 456.20438pt x 267.24844pt>
 File: Immagini/BLK.png Graphic file (type png)
 <use Immagini/BLK.png>
-Package pdftex.def Info: Immagini/BLK.png  used on input line 462. on input lin
-e 462.
+Package pdftex.def Info: Immagini/BLK.png  used on input line 458. on input lin
+e 458.
 Package pdftex.def Info: Requested size: 341.43306pt x 200.01988pt on input lin
-e 462.
-<Immagini/FB.png, id=162, 453.19313pt x 384.6872pt>
+e 458.
+<Immagini/FB.png, id=159, 453.19313pt x 384.6872pt>
 File: Immagini/FB.png Graphic file (type png)
 <use Immagini/FB.png>
-Package pdftex.def Info: Immagini/FB.png  used on input line 473. on input line
- 473.
+Package pdftex.def Info: Immagini/FB.png  used on input line 469. on input line
+ 469.
 Package pdftex.def Info: Requested size: 341.43306pt x 289.82365pt on input lin
-e 473.
+e 469.
  [37 <./Immagini/BLK.png (PNG copy)>] [38 <./Immagini/FB.png (PNG copy)>]
-<Immagini/LAD.png, id=169, 600.74437pt x 228.855pt>
+<Immagini/LAD.png, id=166, 600.74437pt x 228.855pt>
 File: Immagini/LAD.png Graphic file (type png)
 <use Immagini/LAD.png>
-Package pdftex.def Info: Immagini/LAD.png  used on input line 484. on input lin
-e 484.
+Package pdftex.def Info: Immagini/LAD.png  used on input line 480. on input lin
+e 480.
 Package pdftex.def Info: Requested size: 341.43306pt x 130.07155pt on input lin
-e 484.
+e 480.
  [39 <./Immagini/LAD.png (PNG copy)>]
 [40]
-<Immagini/LADELE.JPG, id=176, 405.515pt x 233.87375pt>
+<Immagini/LADELE.JPG, id=173, 405.515pt x 233.87375pt>
 File: Immagini/LADELE.JPG Graphic file (type jpg)
 <use Immagini/LADELE.JPG>
-Package pdftex.def Info: Immagini/LADELE.JPG  used on input line 538. on input 
-line 538.
+Package pdftex.def Info: Immagini/LADELE.JPG  used on input line 525. on input 
+line 525.
 Package pdftex.def Info: Requested size: 341.43306pt x 196.92007pt on input lin
-e 538.
-
-
-LaTeX Warning: Reference `label' on page 41 undefined on input line 547.
-
-[41 <./Immagini/LADELE.JPG>]
-<Immagini/LAD1.png, id=181, 359.09157pt x 112.16907pt>
+e 525.
+ [41 <./Immagini/LADELE.JPG>]
+<Immagini/LAD1.png, id=177, 359.09157pt x 112.16907pt>
 File: Immagini/LAD1.png Graphic file (type png)
 <use Immagini/LAD1.png>
-Package pdftex.def Info: Immagini/LAD1.png  used on input line 553. on input li
-ne 553.
+Package pdftex.def Info: Immagini/LAD1.png  used on input line 537. on input li
+ne 537.
 Package pdftex.def Info: Requested size: 341.43306pt x 106.66096pt on input lin
-e 553.
-<Immagini/LAD2.png, id=182, 353.06906pt x 111.41624pt>
+e 537.
+<Immagini/LAD2.png, id=178, 353.06906pt x 111.41624pt>
 File: Immagini/LAD2.png Graphic file (type png)
 <use Immagini/LAD2.png>
-Package pdftex.def Info: Immagini/LAD2.png  used on input line 562. on input li
-ne 562.
+Package pdftex.def Info: Immagini/LAD2.png  used on input line 546. on input li
+ne 546.
 Package pdftex.def Info: Requested size: 341.43306pt x 107.7455pt on input line
- 562.
+ 546.
  [42 <./Immagini/LAD1.png (PNG copy)>]
-<Immagini/LAD3.png, id=186, 379.4175pt x 151.3153pt>
+<Immagini/LAD3.png, id=183, 379.4175pt x 151.3153pt>
 File: Immagini/LAD3.png Graphic file (type png)
 <use Immagini/LAD3.png>
-Package pdftex.def Info: Immagini/LAD3.png  used on input line 571. on input li
-ne 571.
+Package pdftex.def Info: Immagini/LAD3.png  used on input line 555. on input li
+ne 555.
 Package pdftex.def Info: Requested size: 341.43306pt x 136.16866pt on input lin
-e 571.
- [43 <./Immagini/LAD2.png (PNG copy)> <./Immagini/LAD3.png (PNG copy)>]
-<Immagini/LAD4.png, id=190, 666.23906pt x 271.0125pt>
+e 555.
+
+[43 <./Immagini/LAD2.png (PNG copy)> <./Immagini/LAD3.png (PNG copy)>]
+<Immagini/LAD4.png, id=187, 666.23906pt x 271.0125pt>
 File: Immagini/LAD4.png Graphic file (type png)
 <use Immagini/LAD4.png>
-Package pdftex.def Info: Immagini/LAD4.png  used on input line 582. on input li
-ne 582.
+Package pdftex.def Info: Immagini/LAD4.png  used on input line 566. on input li
+ne 566.
 Package pdftex.def Info: Requested size: 341.43306pt x 138.8886pt on input line
- 582.
+ 566.
  [44 <./Immagini/LAD4.png (PNG copy)>]
-<Immagini/OUT.png, id=194, 441.14813pt x 219.06844pt>
+<Immagini/OUT.png, id=191, 441.14813pt x 219.06844pt>
 File: Immagini/OUT.png Graphic file (type png)
 <use Immagini/OUT.png>
-Package pdftex.def Info: Immagini/OUT.png  used on input line 602. on input lin
-e 602.
+Package pdftex.def Info: Immagini/OUT.png  used on input line 587. on input lin
+e 587.
 Package pdftex.def Info: Requested size: 341.43306pt x 169.55899pt on input lin
-e 602.
+e 587.
 File: Immagini/OUT.png Graphic file (type png)
 <use Immagini/OUT.png>
-Package pdftex.def Info: Immagini/OUT.png  used on input line 609. on input lin
-e 609.
+Package pdftex.def Info: Immagini/OUT.png  used on input line 594. on input lin
+e 594.
 Package pdftex.def Info: Requested size: 341.43306pt x 169.55899pt on input lin
-e 609.
+e 594.
  [45 <./Immagini/OUT.png (PNG copy)>]
-<Immagini/FB1.png, id=198, 638.385pt x 257.46187pt>
+<Immagini/FB1.png, id=195, 638.385pt x 257.46187pt>
 File: Immagini/FB1.png Graphic file (type png)
 <use Immagini/FB1.png>
-Package pdftex.def Info: Immagini/FB1.png  used on input line 623. on input lin
-e 623.
+Package pdftex.def Info: Immagini/FB1.png  used on input line 608. on input lin
+e 608.
 Package pdftex.def Info: Requested size: 341.43306pt x 137.69948pt on input lin
-e 623.
+e 608.
  [46]
-<Immagini/camme.jpg, id=202, 401.5pt x 253.94875pt>
+<Immagini/camme.jpg, id=199, 401.5pt x 253.94875pt>
 File: Immagini/camme.jpg Graphic file (type jpg)
 <use Immagini/camme.jpg>
-Package pdftex.def Info: Immagini/camme.jpg  used on input line 639. on input l
-ine 639.
+Package pdftex.def Info: Immagini/camme.jpg  used on input line 624. on input l
+ine 624.
 Package pdftex.def Info: Requested size: 341.43306pt x 215.96982pt on input lin
+e 624.
+
+[47 <./Immagini/FB1.png (PNG copy)>]
+<Immagini/FIN1.png, id=203, 1288.815pt x 859.21pt>
+File: Immagini/FIN1.png Graphic file (type png)
+<use Immagini/FIN1.png>
+Package pdftex.def Info: Immagini/FIN1.png  used on input line 639. on input li
+ne 639.
+Package pdftex.def Info: Requested size: 341.43306pt x 227.62401pt on input lin
 e 639.
- [47 <./Immagini/FB1.png (PNG copy)>] [48 <./Immagini/camme.jpg>]
-<Immagini/CAM1.png, id=210, 924.45375pt x 201.00093pt>
+ [48 <./Immagini/camme.jpg>]
+<Immagini/FLAC1.JPG, id=209, 5203.44pt x 3468.96pt>
+File: Immagini/FLAC1.JPG Graphic file (type jpg)
+<use Immagini/FLAC1.JPG>
+Package pdftex.def Info: Immagini/FLAC1.JPG  used on input line 652. on input l
+ine 652.
+Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
+e 652.
+ [49 <./Immagini/FIN1.png>] [50 <./Immagini/FLAC1.JPG>]
+<Immagini/CAM1.png, id=218, 924.45375pt x 201.00093pt>
 File: Immagini/CAM1.png Graphic file (type png)
 <use Immagini/CAM1.png>
-Package pdftex.def Info: Immagini/CAM1.png  used on input line 676. on input li
-ne 676.
+Package pdftex.def Info: Immagini/CAM1.png  used on input line 671. on input li
+ne 671.
 Package pdftex.def Info: Requested size: 341.43306pt x 74.23729pt on input line
- 676.
- [49 <./Immagini/CAM1.png (PNG copy)>]
-<Immagini/SH1.png, id=215, 386.94562pt x 129.48375pt>
+ 671.
+<Immagini/SH1.png, id=219, 386.94562pt x 129.48375pt>
 File: Immagini/SH1.png Graphic file (type png)
 <use Immagini/SH1.png>
-Package pdftex.def Info: Immagini/SH1.png  used on input line 692. on input lin
-e 692.
+Package pdftex.def Info: Immagini/SH1.png  used on input line 687. on input lin
+e 687.
 Package pdftex.def Info: Requested size: 341.43306pt x 114.25424pt on input lin
-e 692.
- [50 <./Immagini/SH1.png (PNG copy)>]
-<Immagini/SH8.png, id=219, 776.9025pt x 192.72pt>
+e 687.
+ [51 <./Immagini/CAM1.png (PNG copy)>]
+<Immagini/SH8.png, id=223, 776.9025pt x 192.72pt>
 File: Immagini/SH8.png Graphic file (type png)
 <use Immagini/SH8.png>
-Package pdftex.def Info: Immagini/SH8.png  used on input line 710. on input lin
-e 710.
+Package pdftex.def Info: Immagini/SH8.png  used on input line 705. on input lin
+e 705.
 Package pdftex.def Info: Requested size: 341.43306pt x 84.69707pt on input line
- 710.
-<Immagini/SH2.png, id=220, 1204.5pt x 819.06pt>
+ 705.
+<Immagini/SH2.png, id=224, 1204.5pt x 819.06pt>
 File: Immagini/SH2.png Graphic file (type png)
 <use Immagini/SH2.png>
-Package pdftex.def Info: Immagini/SH2.png  used on input line 720. on input lin
-e 720.
+Package pdftex.def Info: Immagini/SH2.png  used on input line 715. on input lin
+e 715.
 Package pdftex.def Info: Requested size: 341.43306pt x 232.17224pt on input lin
-e 720.
- [51 <./Immagini/SH8.png (PNG copy)>]
-[52 <./Immagini/SH2.png>]
-<Immagini/SH3.png, id=229, 444.15938pt x 207.02344pt>
+e 715.
+
+[52 <./Immagini/SH1.png (PNG copy)> <./Immagini/SH8.png (PNG copy)>] [53 <./Imm
+agini/SH2.png>]
+<Immagini/SH3.png, id=232, 444.15938pt x 207.02344pt>
 File: Immagini/SH3.png Graphic file (type png)
 <use Immagini/SH3.png>
-Package pdftex.def Info: Immagini/SH3.png  used on input line 737. on input lin
-e 737.
+Package pdftex.def Info: Immagini/SH3.png  used on input line 732. on input lin
+e 732.
 Package pdftex.def Info: Requested size: 341.43306pt x 159.14317pt on input lin
-e 737.
-<Immagini/SH4.png, id=230, 480.29437pt x 213.04594pt>
+e 732.
+<Immagini/SH4.png, id=233, 480.29437pt x 213.04594pt>
 File: Immagini/SH4.png Graphic file (type png)
 <use Immagini/SH4.png>
-Package pdftex.def Info: Immagini/SH4.png  used on input line 748. on input lin
-e 748.
+Package pdftex.def Info: Immagini/SH4.png  used on input line 743. on input lin
+e 743.
 Package pdftex.def Info: Requested size: 341.43306pt x 151.45221pt on input lin
-e 748.
- [53 <./Immagini/SH3.png (PNG copy)>]
-<Immagini/SH5.png, id=235, 481.04718pt x 152.82094pt>
+e 743.
+ [54 <./Immagini/SH3.png (PNG copy)>]
+<Immagini/SH5.png, id=238, 481.04718pt x 152.82094pt>
 File: Immagini/SH5.png Graphic file (type png)
 <use Immagini/SH5.png>
-Package pdftex.def Info: Immagini/SH5.png  used on input line 757. on input lin
-e 757.
+Package pdftex.def Info: Immagini/SH5.png  used on input line 752. on input lin
+e 752.
 Package pdftex.def Info: Requested size: 341.43306pt x 108.47096pt on input lin
-e 757.
- [54 <./Immagini/SH4.png (PNG copy)> <./Immagini/SH5.png (PNG copy)>]
-<Immagini/SH6.JPG, id=239, 5203.44pt x 3468.96pt>
+e 752.
+ [55 <./Immagini/SH4.png (PNG copy)> <./Immagini/SH5.png (PNG copy)>]
+<Immagini/SH6.JPG, id=242, 5203.44pt x 3468.96pt>
 File: Immagini/SH6.JPG Graphic file (type jpg)
 <use Immagini/SH6.JPG>
-Package pdftex.def Info: Immagini/SH6.JPG  used on input line 769. on input lin
-e 769.
+Package pdftex.def Info: Immagini/SH6.JPG  used on input line 764. on input lin
+e 764.
 Package pdftex.def Info: Requested size: 341.43306pt x 227.60759pt on input lin
-e 769.
- [55 <./Immagini/SH6.JPG>]
-<Immagini/SH7.JPG, id=243, 499.8675pt x 412.54124pt>
+e 764.
+ [56 <./Immagini/SH6.JPG>]
+<Immagini/SH7.JPG, id=246, 499.8675pt x 412.54124pt>
 File: Immagini/SH7.JPG Graphic file (type jpg)
 <use Immagini/SH7.JPG>
-Package pdftex.def Info: Immagini/SH7.JPG  used on input line 788. on input lin
-e 788.
+Package pdftex.def Info: Immagini/SH7.JPG  used on input line 783. on input lin
+e 783.
 Package pdftex.def Info: Requested size: 341.43306pt x 281.7959pt on input line
- 788.
-
-[56 <./Immagini/SH7.JPG>]
+ 783.
+ [57 <./Immagini/SH7.JPG>]
 Capitolo 3.
-[57
+[58
 
-] [58]
-<Immagini/1.JPG, id=253, 365.86688pt x 195.73125pt>
+] [59]
+<Immagini/1.JPG, id=256, 365.86688pt x 195.73125pt>
 File: Immagini/1.JPG Graphic file (type jpg)
 <use Immagini/1.JPG>
-Package pdftex.def Info: Immagini/1.JPG  used on input line 822. on input line 
-822.
+Package pdftex.def Info: Immagini/1.JPG  used on input line 817. on input line 
+817.
 Package pdftex.def Info: Requested size: 341.43306pt x 182.67029pt on input lin
-e 822.
- [59] [60 <./Immagini/1.JPG>] [61] [62]
-<Immagini/2.JPG, id=267, 523.9575pt x 204.01219pt>
+e 817.
+ [60] [61 <./Immagini/1.JPG>] [62] [63]
+<Immagini/2.JPG, id=270, 523.9575pt x 204.01219pt>
 File: Immagini/2.JPG Graphic file (type jpg)
 <use Immagini/2.JPG>
-Package pdftex.def Info: Immagini/2.JPG  used on input line 855. on input line 
-855.
+Package pdftex.def Info: Immagini/2.JPG  used on input line 850. on input line 
+850.
 Package pdftex.def Info: Requested size: 341.43306pt x 132.94566pt on input lin
-e 855.
- [63] [64 <./Immagini/2.JPG>]
+e 850.
+ [64] [65 <./Immagini/2.JPG>]
 
-LaTeX Warning: Reference `OPC' on page 65 undefined on input line 872.
+LaTeX Warning: Reference `OPC' on page 66 undefined on input line 867.
 
-<Immagini/OPC.JPG, id=274, 424.58624pt x 311.66437pt>
+<Immagini/OPC.JPG, id=277, 424.58624pt x 311.66437pt>
 File: Immagini/OPC.JPG Graphic file (type jpg)
 <use Immagini/OPC.JPG>
-Package pdftex.def Info: Immagini/OPC.JPG  used on input line 875. on input lin
-e 875.
+Package pdftex.def Info: Immagini/OPC.JPG  used on input line 870. on input lin
+e 870.
 Package pdftex.def Info: Requested size: 369.88582pt x 271.52626pt on input lin
-e 875.
-[65] [66 <./Immagini/OPC.JPG>]
-<Immagini/OPC2.JPG, id=282, 421.575pt x 161.85469pt>
+e 870.
+[66] [67 <./Immagini/OPC.JPG>]
+<Immagini/OPC2.JPG, id=285, 421.575pt x 161.85469pt>
 File: Immagini/OPC2.JPG Graphic file (type jpg)
 <use Immagini/OPC2.JPG>
-Package pdftex.def Info: Immagini/OPC2.JPG  used on input line 889. on input li
-ne 889.
+Package pdftex.def Info: Immagini/OPC2.JPG  used on input line 884. on input li
+ne 884.
 Package pdftex.def Info: Requested size: 369.88582pt x 142.0127pt on input line
- 889.
- [67] [68 <./Immagini/OPC2.JPG>]
+ 884.
+ [68] [69 <./Immagini/OPC2.JPG>]
 Capitolo 4.
-[69
-
-]
-Capitolo 5.
 [70
 
-] [71]
-<Immagini/VIS1.png, id=299, 587.19376pt x 217.5628pt>
+] [71] [72]
+<Immagini/VIS1.png, id=302, 587.19376pt x 217.5628pt>
 File: Immagini/VIS1.png Graphic file (type png)
 <use Immagini/VIS1.png>
-Package pdftex.def Info: Immagini/VIS1.png  used on input line 947. on input li
-ne 947.
+Package pdftex.def Info: Immagini/VIS1.png  used on input line 943. on input li
+ne 943.
 Package pdftex.def Info: Requested size: 369.88582pt x 137.04536pt on input lin
-e 947.
- [72 <./Immagini/VIS1.png>]
-<Immagini/VIS3.png, id=304, 1028.34187pt x 578.16pt>
+e 943.
+<Immagini/VIS3.png, id=303, 1028.34187pt x 578.16pt>
 File: Immagini/VIS3.png Graphic file (type png)
 <use Immagini/VIS3.png>
-Package pdftex.def Info: Immagini/VIS3.png  used on input line 956. on input li
-ne 956.
+Package pdftex.def Info: Immagini/VIS3.png  used on input line 952. on input li
+ne 952.
 Package pdftex.def Info: Requested size: 369.88582pt x 207.961pt on input line 
-956.
-<Immagini/VIS2.png, id=305, 1022.31938pt x 408.02437pt>
+952.
+ [73 <./Immagini/VIS1.png>]
+<Immagini/VIS2.png, id=308, 1022.31938pt x 408.02437pt>
 File: Immagini/VIS2.png Graphic file (type png)
 <use Immagini/VIS2.png>
-Package pdftex.def Info: Immagini/VIS2.png  used on input line 963. on input li
-ne 963.
+Package pdftex.def Info: Immagini/VIS2.png  used on input line 959. on input li
+ne 959.
 Package pdftex.def Info: Requested size: 369.88582pt x 147.62332pt on input lin
-e 963.
- [73 <./Immagini/VIS3.png> <./Immagini/VIS2.png (PNG copy)>]
+e 959.
 <Immagini/VIS5.png, id=309, 1028.34187pt x 578.16pt>
 File: Immagini/VIS5.png Graphic file (type png)
 <use Immagini/VIS5.png>
-Package pdftex.def Info: Immagini/VIS5.png  used on input line 974. on input li
-ne 974.
+Package pdftex.def Info: Immagini/VIS5.png  used on input line 970. on input li
+ne 970.
 Package pdftex.def Info: Requested size: 369.88582pt x 207.961pt on input line 
-974.
-<Immagini/VIS4.png, id=310, 1023.07219pt x 444.91219pt>
+970.
+ [74 <./Immagini/VIS3.png> <./Immagini/VIS2.png (PNG copy)>]
+<Immagini/VIS4.png, id=313, 1023.07219pt x 444.91219pt>
 File: Immagini/VIS4.png Graphic file (type png)
 <use Immagini/VIS4.png>
-Package pdftex.def Info: Immagini/VIS4.png  used on input line 984. on input li
-ne 984.
+Package pdftex.def Info: Immagini/VIS4.png  used on input line 980. on input li
+ne 980.
 Package pdftex.def Info: Requested size: 369.88582pt x 160.85393pt on input lin
-e 984.
- [74 <./Immagini/VIS5.png>]
-<Immagini/VIS6.png, id=314, 1026.83624pt x 445.665pt>
+e 980.
+ [75 <./Immagini/VIS5.png>]
+<Immagini/VIS6.png, id=317, 1026.83624pt x 445.665pt>
 File: Immagini/VIS6.png Graphic file (type png)
 <use Immagini/VIS6.png>
-Package pdftex.def Info: Immagini/VIS6.png  used on input line 999. on input li
-ne 999.
+Package pdftex.def Info: Immagini/VIS6.png  used on input line 995. on input li
+ne 995.
 Package pdftex.def Info: Requested size: 369.88582pt x 160.53447pt on input lin
-e 999.
- [75 <./Immagini/VIS4.png (PNG copy)>]
-<Immagini/VIS7.png, id=318, 481.8pt x 361.35pt>
+e 995.
+ [76 <./Immagini/VIS4.png (PNG copy)>]
+<Immagini/VIS7.png, id=321, 481.8pt x 361.35pt>
 File: Immagini/VIS7.png Graphic file (type png)
 <use Immagini/VIS7.png>
-Package pdftex.def Info: Immagini/VIS7.png  used on input line 1011. on input l
-ine 1011.
+Package pdftex.def Info: Immagini/VIS7.png  used on input line 1007. on input l
+ine 1007.
 Package pdftex.def Info: Requested size: 369.88582pt x 277.42433pt on input lin
-e 1011.
- [76 <./Immagini/VIS6.png (PNG copy)>]
-<Immagini/VIS8.png, id=322, 1028.34187pt x 548.0475pt>
+e 1007.
+ [77 <./Immagini/VIS6.png (PNG copy)>]
+<Immagini/VIS8.png, id=325, 1028.34187pt x 548.0475pt>
 File: Immagini/VIS8.png Graphic file (type png)
 <use Immagini/VIS8.png>
-Package pdftex.def Info: Immagini/VIS8.png  used on input line 1025. on input l
-ine 1025.
+Package pdftex.def Info: Immagini/VIS8.png  used on input line 1021. on input l
+ine 1021.
 Package pdftex.def Info: Requested size: 369.88582pt x 197.1297pt on input line
- 1025.
- [77 <./Immagini/VIS7.png>]
-<Immagini/VIS9.png, id=328, 1028.34187pt x 546.54187pt>
+ 1021.
+ [78 <./Immagini/VIS7.png>]
+<Immagini/VIS9.png, id=331, 1028.34187pt x 546.54187pt>
 File: Immagini/VIS9.png Graphic file (type png)
 <use Immagini/VIS9.png>
-Package pdftex.def Info: Immagini/VIS9.png  used on input line 1037. on input l
-ine 1037.
+Package pdftex.def Info: Immagini/VIS9.png  used on input line 1033. on input l
+ine 1033.
 Package pdftex.def Info: Requested size: 369.88582pt x 196.58812pt on input lin
-e 1037.
- [78 <./Immagini/VIS8.png>]
-<Immagini/VIS10.png, id=333, 1028.34187pt x 548.0475pt>
+e 1033.
+
+[79 <./Immagini/VIS8.png>]
+<Immagini/VIS10.png, id=336, 1028.34187pt x 548.0475pt>
 File: Immagini/VIS10.png Graphic file (type png)
 <use Immagini/VIS10.png>
-Package pdftex.def Info: Immagini/VIS10.png  used on input line 1047. on input 
-line 1047.
+Package pdftex.def Info: Immagini/VIS10.png  used on input line 1043. on input 
+line 1043.
 Package pdftex.def Info: Requested size: 369.88582pt x 197.1297pt on input line
- 1047.
- [79 <./Immagini/VIS9.png>]
-<Immagini/VIS11.png, id=337, 1028.34187pt x 548.0475pt>
+ 1043.
+ [80 <./Immagini/VIS9.png>]
+<Immagini/VIS11.png, id=340, 1028.34187pt x 548.0475pt>
 File: Immagini/VIS11.png Graphic file (type png)
 <use Immagini/VIS11.png>
-Package pdftex.def Info: Immagini/VIS11.png  used on input line 1059. on input 
-line 1059.
+Package pdftex.def Info: Immagini/VIS11.png  used on input line 1055. on input 
+line 1055.
 Package pdftex.def Info: Requested size: 369.88582pt x 197.1297pt on input line
- 1059.
- [80 <./Immagini/VIS10.png>]
-<Immagini/VIS12.png, id=341, 1028.34187pt x 548.0475pt>
+ 1055.
+ [81 <./Immagini/VIS10.png>]
+<Immagini/VIS12.png, id=344, 1028.34187pt x 548.0475pt>
 File: Immagini/VIS12.png Graphic file (type png)
 <use Immagini/VIS12.png>
-Package pdftex.def Info: Immagini/VIS12.png  used on input line 1076. on input 
-line 1076.
+Package pdftex.def Info: Immagini/VIS12.png  used on input line 1072. on input 
+line 1072.
 Package pdftex.def Info: Requested size: 369.88582pt x 197.1297pt on input line
- 1076.
-
-[81 <./Immagini/VIS11.png>]
-<Immagini/VIS13.png, id=345, 1028.34187pt x 546.54187pt>
+ 1072.
+ [82 <./Immagini/VIS11.png>]
+<Immagini/VIS13.png, id=348, 1028.34187pt x 546.54187pt>
 File: Immagini/VIS13.png Graphic file (type png)
 <use Immagini/VIS13.png>
-Package pdftex.def Info: Immagini/VIS13.png  used on input line 1085. on input 
-line 1085.
+Package pdftex.def Info: Immagini/VIS13.png  used on input line 1081. on input 
+line 1081.
 Package pdftex.def Info: Requested size: 369.88582pt x 196.58812pt on input lin
-e 1085.
- [82 <./Immagini/VIS12.png> <./Immagini/VIS13.png>]
-<Immagini/VIS14.png, id=349, 773.13844pt x 335.00156pt>
+e 1081.
+ [83 <./Immagini/VIS12.png> <./Immagini/VIS13.png>]
+<Immagini/VIS14.png, id=352, 773.13844pt x 335.00156pt>
 File: Immagini/VIS14.png Graphic file (type png)
 <use Immagini/VIS14.png>
-Package pdftex.def Info: Immagini/VIS14.png  used on input line 1100. on input 
-line 1100.
+Package pdftex.def Info: Immagini/VIS14.png  used on input line 1096. on input 
+line 1096.
 Package pdftex.def Info: Requested size: 369.88582pt x 160.2724pt on input line
- 1100.
-<Immagini/VIS15.png, id=350, 773.13844pt x 335.00156pt>
+ 1096.
+<Immagini/VIS15.png, id=353, 773.13844pt x 335.00156pt>
 File: Immagini/VIS15.png Graphic file (type png)
 <use Immagini/VIS15.png>
-Package pdftex.def Info: Immagini/VIS15.png  used on input line 1110. on input 
-line 1110.
+Package pdftex.def Info: Immagini/VIS15.png  used on input line 1106. on input 
+line 1106.
 Package pdftex.def Info: Requested size: 369.88582pt x 160.2724pt on input line
- 1110.
-
-[83 <./Immagini/VIS14.png>]
-<Immagini/VIS16.png, id=355, 772.38562pt x 334.24875pt>
+ 1106.
+ [84 <./Immagini/VIS14.png>]
+<Immagini/VIS16.png, id=358, 772.38562pt x 334.24875pt>
 File: Immagini/VIS16.png Graphic file (type png)
 <use Immagini/VIS16.png>
-Package pdftex.def Info: Immagini/VIS16.png  used on input line 1119. on input 
-line 1119.
+Package pdftex.def Info: Immagini/VIS16.png  used on input line 1115. on input 
+line 1115.
 Package pdftex.def Info: Requested size: 369.88582pt x 160.06525pt on input lin
-e 1119.
- [84 <./Immagini/VIS15.png> <./Immagini/VIS16.png>]
-[85]
+e 1115.
+ [85 <./Immagini/VIS15.png> <./Immagini/VIS16.png>] [86]
+Capitolo 5.
+[87
+
+] [88] [89] [90] [91] [92] [93] [94]
+<Immagini/IND40.jpg, id=390, 903.375pt x 551.05875pt>
+File: Immagini/IND40.jpg Graphic file (type jpg)
+<use Immagini/IND40.jpg>
+Package pdftex.def Info: Immagini/IND40.jpg  used on input line 1185. on input 
+line 1185.
+Package pdftex.def Info: Requested size: 369.88582pt x 225.63283pt on input lin
+e 1185.
+ [95] [96 <./Immagini/IND40.jpg>]
+[97] [98] [99] [100] [101] [102]
+<Immagini/REP1.png, id=418, 353.06906pt x 249.18094pt>
+File: Immagini/REP1.png Graphic file (type png)
+<use Immagini/REP1.png>
+Package pdftex.def Info: Immagini/REP1.png  used on input line 1239. on input l
+ine 1239.
+Package pdftex.def Info: Requested size: 369.88582pt x 261.05074pt on input lin
+e 1239.
+ [103 <./Immagini/REP1.png>]
+<Immagini/HMI1.png, id=423, 1024.57782pt x 496.85625pt>
+File: Immagini/HMI1.png Graphic file (type png)
+<use Immagini/HMI1.png>
+Package pdftex.def Info: Immagini/HMI1.png  used on input line 1254. on input l
+ine 1254.
+Package pdftex.def Info: Requested size: 369.88582pt x 179.36848pt on input lin
+e 1254.
+<Immagini/HMI2.png, id=424, 1027.58907pt x 512.66531pt>
+File: Immagini/HMI2.png Graphic file (type png)
+<use Immagini/HMI2.png>
+Package pdftex.def Info: Immagini/HMI2.png  used on input line 1263. on input l
+ine 1263.
+Package pdftex.def Info: Requested size: 369.88582pt x 184.53589pt on input lin
+e 1263.
+ [104 <./Immagini/HMI1.png (PNG copy)>]
+<Immagini/HMI3.png, id=428, 1027.58907pt x 496.10344pt>
+File: Immagini/HMI3.png Graphic file (type png)
+<use Immagini/HMI3.png>
+Package pdftex.def Info: Immagini/HMI3.png  used on input line 1272. on input l
+ine 1272.
+Package pdftex.def Info: Requested size: 369.88582pt x 178.57439pt on input lin
+e 1272.
+
+Underfull \hbox (badness 2538) in paragraph at lines 1273--1273
+[]\T1/cmr/m/n/12 Figura 5.5: Script Ese-gui-ta al-l'A-per-tu-ra di un Lot-to (2
+1CFR) -
+ []
+
+[105 <./Immagini/HMI2.png (PNG copy)> <./Immagini/HMI3.png (PNG copy)>]
+<Immagini/HMI6.png, id=432, 1028.34187pt x 578.16pt>
+File: Immagini/HMI6.png Graphic file (type png)
+<use Immagini/HMI6.png>
+Package pdftex.def Info: Immagini/HMI6.png  used on input line 1286. on input l
+ine 1286.
+Package pdftex.def Info: Requested size: 369.88582pt x 207.961pt on input line 
+1286.
+<Immagini/HMI7.png, id=433, 1028.34187pt x 578.16pt>
+File: Immagini/HMI7.png Graphic file (type png)
+<use Immagini/HMI7.png>
+Package pdftex.def Info: Immagini/HMI7.png  used on input line 1295. on input l
+ine 1295.
+Package pdftex.def Info: Requested size: 369.88582pt x 207.961pt on input line 
+1295.
+
+[106 <./Immagini/HMI6.png>]
+<Immagini/HMI10.png, id=438, 1028.34187pt x 578.16pt>
+File: Immagini/HMI10.png Graphic file (type png)
+<use Immagini/HMI10.png>
+Package pdftex.def Info: Immagini/HMI10.png  used on input line 1303. on input 
+line 1303.
+Package pdftex.def Info: Requested size: 369.88582pt x 207.961pt on input line 
+1303.
+<Immagini/HMI11.png, id=439, 1371.1225pt x 770.88pt>
+File: Immagini/HMI11.png Graphic file (type png)
+<use Immagini/HMI11.png>
+Package pdftex.def Info: Immagini/HMI11.png  used on input line 1312. on input 
+line 1312.
+Package pdftex.def Info: Requested size: 369.88582pt x 207.95218pt on input lin
+e 1312.
+ [107 <./Immagini/HMI7.png> <./Immagini/HMI10.png>]
+<Immagini/HMI14.png, id=443, 1371.1225pt x 770.88pt>
+File: Immagini/HMI14.png Graphic file (type png)
+<use Immagini/HMI14.png>
+Package pdftex.def Info: Immagini/HMI14.png  used on input line 1319. on input 
+line 1319.
+Package pdftex.def Info: Requested size: 369.88582pt x 207.95218pt on input lin
+e 1319.
+<Immagini/HMI12.png, id=444, 1371.1225pt x 770.88pt>
+File: Immagini/HMI12.png Graphic file (type png)
+<use Immagini/HMI12.png>
+Package pdftex.def Info: Immagini/HMI12.png  used on input line 1326. on input 
+line 1326.
+Package pdftex.def Info: Requested size: 369.88582pt x 207.95218pt on input lin
+e 1326.
+
+[108 <./Immagini/HMI11.png> <./Immagini/HMI14.png>] [109 <./Immagini/HMI12.png>
+]
 Capitolo 6.
-[86
+[110
 
-] [87] [88] [89] [90] [91] [92] [93] [94] [95]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1206
+] [111]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1343
 .
-
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1207
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1344
 []\T1/cmr/m/n/12 'Automatizzare e trar-re im-me-dia-to pro-fit-to con lo stan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1207
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1344
 \T1/cmr/m/n/12 dard lea-der In-du-strial Ethernet.'$\T1/cmtt/m/n/12 http : / / 
 w5 . siemens . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1207
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1344
 \T1/cmtt/m/n/12 italy / web / AD / ProdottieSoluzioni / Sistemiautomazionenew /
 
  []
 
-[96
+[112
 
 ] (./Tesi latex.aux)
 
@@ -1639,13 +1744,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17853 strings out of 492985
- 340879 string characters out of 6138639
- 406976 words of memory out of 5000000
- 20957 multiletter control sequences out of 15000+600000
+ 17931 strings out of 492985
+ 342226 string characters out of 6138639
+ 403137 words of memory out of 5000000
+ 21022 multiletter control sequences out of 15000+600000
  16277 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,7n,65p,2665b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,65p,2483b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/
@@ -1655,10 +1760,10 @@ are/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 tt1200.pfb>
-Output written on "Tesi latex.pdf" (98 pages, 67963585 bytes).
+Output written on "Tesi latex.pdf" (113 pages, 77431173 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
+ 497 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 348 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 413 words of extra memory for PDF output out of 10000 (max. 10000000)
 
